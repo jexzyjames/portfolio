@@ -33,7 +33,7 @@ const Main = () => {
           <img className="remove" onClick={closeMenu} src={close} alt="" />
           <li>
             {" "}
-            <Link offset={0} duration={500} to="hero">
+            <Link offset={0} duration={500} to="main">
               <p onClick={() => setIsOpen("home")}>Home</p>
               {isOpen === "home" ? <img src={underline} alt="" /> : ""}
             </Link>
