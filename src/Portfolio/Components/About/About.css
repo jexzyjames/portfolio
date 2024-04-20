@@ -137,7 +137,8 @@
     .about-section{
         flex-direction: column;
         gap: 50px;
-        width: 100%;
+        diaplay:grid;
+        grid-trmplate-columns:1fr;
         overflow:hidden;
     }
     .image-left img{
