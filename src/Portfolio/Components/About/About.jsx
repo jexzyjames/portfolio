@@ -18,9 +18,9 @@ const About = () => {
           whileInView={{
             opacity: 1,
             translateX: 0,
-            transition: { delay: 0.5 },
+            transition: { delay: 0.1 },
           }}
-          whileFocus={{ opacity: 1, translateX: 0, transition: { delay: 0.2} }}
+          whileFocus={{ opacity: 1, translateX: 0, transition: { delay: 0.1} }}
         >
           <img src={img} alt="" />
         </motion.div>
@@ -30,9 +30,9 @@ const About = () => {
           whileInView={{
             opacity: 1,
             translateX: 0,
-            transition: { delay: 0.2 },
+            transition: { delay: 0.1 },
           }}
-          whileFocus={{ opacity: 1, translateX: 0, transition: { delay: 0.3 } }}
+          whileFocus={{ opacity: 1, translateX: 0, transition: { delay: 0.1 } }}
         >
           <div className="infos">
             <p>
@@ -86,7 +86,7 @@ const About = () => {
           animate={{
             opacity: 1,
             translateY: 0,
-            transition: { delay: 0.2 },
+            transition: { delay: 0.1 },
           }}
           className="years"
         >
@@ -100,7 +100,7 @@ const About = () => {
           animate={{
             opacity: 1,
             translateY: 0,
-            transition: { delay: 0.2 },
+            transition: { delay: 0.1 },
           }}
         >
           <h2>1</h2>
