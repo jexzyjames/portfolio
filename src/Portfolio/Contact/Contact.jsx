@@ -45,8 +45,8 @@ const Contact = () => {
     <div className="contact">
         <motion.div
         initial={{ opacity: 0, translateY: -100 }}
-        whileInView={{ opacity: 1, translateY: 0, transition:{delay: 0.2} }}
-        whileFocus={{ opacity: 1, translateY: 0, transition:{delay:0.2} }}className="contact-title">
+        whileInView={{ opacity: 1, translateY: 0, transition:{delay: 0.1} }}
+        whileFocus={{ opacity: 1, translateY: 0, transition:{delay:0.1} }}className="contact-title">
           <h1>Get in touch</h1>
           <img src={theme} alt="" />
         </motion.div>
@@ -54,12 +54,12 @@ const Contact = () => {
 
       <motion.div 
       initial={{ opacity: 0, translateY: -100 }}
-      whileInView={{ opacity: 1, translateY: 0, transition:{delay: 0.2} }}
+      whileInView={{ opacity: 1, translateY: 0, transition:{delay: 0.1} }}
       className="contact-left">
         <h1>Let's talk</h1>
         <motion.p
          initial={{ opacity: 0, translateY: -100 }}
-         whileInView={{ opacity: 1, translateY: 0, transition:{delay: 0.2} }}
+         whileInView={{ opacity: 1, translateY: 0, transition:{delay: 0.1} }}
         >
           Feel free to reach out through contact form or find our contact
           information below. Your feedback, questions, and suggestionss are
@@ -145,6 +145,7 @@ const Contact = () => {
           >
             Submit now
           </Button>
+          <br/>
           <span ref={result}></span>
         </form>
       </div>
