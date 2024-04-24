@@ -84,7 +84,7 @@ const Main = () => {
 
       <motion.div
         initial={{ opacity: 0, translateY: -100 }}
-        whileInView={{ opacity: 1, translateY: 0, transition: { delay: 0.3 } }}
+        whileInView={{ opacity: 1, translateY: 0, transition: { delay: 0.1 } }}
         className="wrapper"
       >
         <div className="wrapper-content">
