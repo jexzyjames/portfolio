@@ -20,7 +20,7 @@ const About = () => {
             translateX: 0,
             transition: { delay: 0.5 },
           }}
-          whileFocus={{ opacity: 1, translateX: 0, transition: { delay: 0.5 } }}
+          whileFocus={{ opacity: 1, translateX: 0, transition: { delay: 0.2} }}
         >
           <img src={img} alt="" />
         </motion.div>
@@ -30,9 +30,9 @@ const About = () => {
           whileInView={{
             opacity: 1,
             translateX: 0,
-            transition: { delay: 0.6 },
+            transition: { delay: 0.2 },
           }}
-          whileFocus={{ opacity: 1, translateX: 0, transition: { delay: 0.6 } }}
+          whileFocus={{ opacity: 1, translateX: 0, transition: { delay: 0.3 } }}
         >
           <div className="infos">
             <p>
@@ -65,7 +65,7 @@ const About = () => {
       </div>
       <motion.div
         initial={{ opacity: 0, translateY: -100 }}
-        animate={{ opacity: 1, translateY: 0, transition: { delay: 0.5 } }}
+        animate={{ opacity: 1, translateY: 0, transition: { delay: 0.2} }}
         className="experience"
       >
         <motion.div
@@ -86,7 +86,7 @@ const About = () => {
           animate={{
             opacity: 1,
             translateY: 0,
-            transition: { delay: 0.5 },
+            transition: { delay: 0.2 },
           }}
           className="years"
         >
@@ -100,7 +100,7 @@ const About = () => {
           animate={{
             opacity: 1,
             translateY: 0,
-            transition: { delay: 0.5 },
+            transition: { delay: 0.2 },
           }}
         >
           <h2>1</h2>
