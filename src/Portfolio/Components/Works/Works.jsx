@@ -12,7 +12,7 @@ const Works = () => {
     <div className='services'>
         <motion.div
          initial={{ opacity: 0, translateY: -100 }}
-         whileInView={{ opacity: 1, translateY: 0, transition:{delay: 0.2} }}
+         whileInView={{ opacity: 1, translateY: 0, transition:{delay: 0.1} }}
          className="services-title">
             <h1>My latest work</h1>
             <img src={theme}alt="" />
@@ -21,20 +21,20 @@ const Works = () => {
                 return(
                 <motion.div className='services-container'
                 initial={{ opacity: 0, translateY: -100 }}
-                whileInView={{ opacity: 1, translateY: 0, transition:{delay: 0.2} }}
-                whileFocus={{ opacity: 1, translateY: 0, transition:{delay:0.2} }} 
+                whileInView={{ opacity: 1, translateY: 0, transition:{delay: 0.1} }}
+                whileFocus={{ opacity: 1, translateY: 0, transition:{delay:0.1} }} 
                 >
 
                 <img src={item.w_img} alt="" /> 
                     <motion.div
                       initial={{ opacity: 0, translateX: 100 }}
-                      whileInView={{ opacity: 1, translateX: 0, transition:{delay: 0.2} }}
-                      whileFocus={{ opacity: 1, translatX: 0, transition:{delay:0.2} }} 
+                      whileInView={{ opacity: 1, translateX: 0, transition:{delay: 0.1} }}
+                      whileFocus={{ opacity: 1, translatX: 0, transition:{delay:0.1} }} 
                     className="deeds">
                         <motion.div
                          initial={{ opacity: 0, translateX: 100 }}
-                         whileInView={{ opacity: 1, translateX: 0, transition:{delay: 0.2} }}
-                         whileFocus={{ opacity: 1, translateYX: 0, transition:{delay:0.2} }} 
+                         whileInView={{ opacity: 1, translateX: 0, transition:{delay: 0.1} }}
+                         whileFocus={{ opacity: 1, translateYX: 0, transition:{delay:0.1} }} 
                          className="write-up">
                             <p>{item.text}</p>
                             <ul>
