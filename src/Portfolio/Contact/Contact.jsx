@@ -31,7 +31,13 @@ const Contact = () => {
 
         error => {
           console.log("FAILED...", error.text);
+           var time = setTimeout(() => {
           result.current.innerHTML = "ERRROR. Email not sent";
+                       }, 3000);
+
+          return () => {
+            clearTimeout(time, 1000);
+          };
         }
       );
   };
@@ -39,8 +45,8 @@ const Contact = () => {
     <div className="contact">
         <motion.div
         initial={{ opacity: 0, translateY: -100 }}
-        whileInView={{ opacity: 1, translateY: 0, transition:{delay: 0.6} }}
-        whileFocus={{ opacity: 1, translateY: 0, transition:{delay:0.6} }}className="contact-title">
+        whileInView={{ opacity: 1, translateY: 0, transition:{delay: 0.2} }}
+        whileFocus={{ opacity: 1, translateY: 0, transition:{delay:0.2} }}className="contact-title">
           <h1>Get in touch</h1>
           <img src={theme} alt="" />
         </motion.div>
@@ -48,12 +54,12 @@ const Contact = () => {
 
       <motion.div 
       initial={{ opacity: 0, translateY: -100 }}
-      whileInView={{ opacity: 1, translateY: 0, transition:{delay: 0.6} }}
+      whileInView={{ opacity: 1, translateY: 0, transition:{delay: 0.2} }}
       className="contact-left">
         <h1>Let's talk</h1>
         <motion.p
          initial={{ opacity: 0, translateY: -100 }}
-         whileInView={{ opacity: 1, translateY: 0, transition:{delay: 0.6} }}
+         whileInView={{ opacity: 1, translateY: 0, transition:{delay: 0.2} }}
         >
           Feel free to reach out through contact form or find our contact
           information below. Your feedback, questions, and suggestionss are
@@ -96,7 +102,7 @@ const Contact = () => {
 
             }}
             fullWidth
-            name="name"
+            name="user_name"
             placeholder="Enter your name"
             required
           />
@@ -112,7 +118,7 @@ const Contact = () => {
             fullWidth
             type="tel"
             placeholder="Enter your mobile"
-            name="phone"
+            name="user_phone"
             required
           />
           <label htmlFor="message">Write your message here</label>
