@@ -10,7 +10,7 @@ const Projects = () => {
     <motion.div 
     id="section"
     initial={{ opacity: 0, x: -100 }}
-    whileInView={{ opacity: 1, x: 0, transition:{delay:0.5} }}
+    whileInView={{ opacity: 1, x: 0, transition:{delay:0.2} }}
     className="works">
       <div className="works-title">
         <h1>My Services</h1>
@@ -21,7 +21,7 @@ const Projects = () => {
           return (
             <motion.div
               initial={{ opacity: 0, translateY: -100 }}
-              whileInView={{ opacity: 1, translateY: 0, transition:{delay: 0.5} }}
+              whileInView={{ opacity: 1, translateY: 0, transition:{delay: 0.2} }}
               className="format"
               key={id}
             >
