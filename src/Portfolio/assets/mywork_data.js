@@ -17,7 +17,7 @@ const mywork_data = [
             text2: 'css',
             text3: 'javascript',
         },
-        link:'https://zuri-task-2qgqo9yj6-jexzyjames.vercel.app/'
+        link:'https://zuri-task-nine.vercel.app/'
     },
     {
         w_no:2,
