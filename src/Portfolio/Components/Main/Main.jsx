@@ -107,7 +107,7 @@ const Main = () => {
                 Connect with me <FaLinkedin />{" "}
               </button>
             </a>
-            <a href="https://drive.google.com/file/d/1fwH6olvob9KBDlz6RtJOOP-Etq0ECT7j/view?usp=drivesdk">
+            <a href="https://drive.google.com/file/d/1R3juSWTnJN0bnwuyF-5Gtza-W4Xura2_/view?usp=drivesdk">
               <button className="resume-btn">My resume</button>
             </a>
           </div>
