@@ -1,6 +1,6 @@
 import React from "react";
 import "./About.css";
-import img from "../../assets/IMG_9969.JPG";
+import img from "../../assets/jj.jpg";
 import theme from "../../assets/theme_pattern.svg";
 import { motion } from "framer-motion";
 const About = () => {
@@ -77,7 +77,7 @@ const About = () => {
           }}
           className="years"
         >
-          <h2>2+</h2>
+          <h2>3+</h2>
           <h5>YEARS OF EXPERIENCE</h5>
         </motion.div>
         <hr />

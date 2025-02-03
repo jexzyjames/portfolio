@@ -2,26 +2,33 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./Contact.css";
 import theme from "../assets/theme_pattern.svg";
-import { FaEnvelope, FaPhone, FaLocationArrow } from "react-icons/fa";
+import { FaEnvelope,  FaPhone, FaLocationArrow } from "react-icons/fa";
 import { TextField, Button } from "@mui/material";
 import { motion } from "framer-motion";
+import Lottie from 'lottie-react'
+import loader from '../../loader.json'
+
 const Contact = () => {
   const form = useRef();
   const result = useRef();
-  const [res] = useState("");
-
+  const [message, setMessage] = useState("");
+  const [loading, setLoading] = useState(false);
+  let Names;
+  let Phone;
   const sendEmail = e => {
     e.preventDefault();
+    setLoading(true)
 
     emailjs
-      .sendForm("service_hmhmjdo", "template_uazi2if", form.current, {
+      .sendForm("service_hmhmjdo", "template_uazi2if", form.current,{
         publicKey: "itZqWuLC3b5kNaAE-",
       })
       .then(
         () => {
           console.log("SUCCESS!");
           var time = setTimeout(() => {
-            result.current.innerHTML = "SUCCESS. Email sent successfully";
+            setMessage('Email sent succesfully')
+            setLoading(false)
           }, 3000);
 
           return () => {
@@ -32,14 +39,16 @@ const Contact = () => {
         error => {
           console.log("FAILED...", error.text);
            var time = setTimeout(() => {
-          result.current.innerHTML = "ERRROR. Email not sent";
+            setMessage('Failed to send Message')
                        }, 3000);
 
           return () => {
             clearTimeout(time, 1000);
           };
+          setLoading(false)
         }
       );
+      e.target.reset();
   };
   return (
     <div className="contact">
@@ -102,7 +111,7 @@ const Contact = () => {
 
             }}
             fullWidth
-            name="user_name"
+            name='to_name'
             placeholder="Enter your name"
             required
           />
@@ -118,7 +127,7 @@ const Contact = () => {
             fullWidth
             type="tel"
             placeholder="Enter your mobile"
-            name="user_phone"
+            name='phone'
             required
           />
           <label htmlFor="message">Write your message here</label>
@@ -127,6 +136,10 @@ const Contact = () => {
             placeholder="Enter your message"
             rows="6"
           ></textarea>
+          {loading ? <div className="loader-div">
+            <Lottie className="loader" animationData={loader} />
+          </div>
+          :
           <Button
           className="submit-btn"
             type="submit"
@@ -139,14 +152,17 @@ const Contact = () => {
               background: 'linear-gradient(270deg, #Df8908 -5.09%, #b415ff 100.26%)',
 
             }}
-            
             color="primary"
             variant="contained"
           >
-            Submit now
+            Submit Now
           </Button>
+        }
+        <p>{message}</p>
           <br/>
-          <span ref={result}></span>
+          {/* <div>
+            {loading && <p>{message}</p> }
+          </div> */}
         </form>
       </div>
         </div>

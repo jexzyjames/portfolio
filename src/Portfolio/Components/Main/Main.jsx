@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import img from "../../assets/IMG_9969.JPG";
+import img from "../../assets/cover.jpg";
 import menu from "../../assets/menu_open.svg";
 import close from "../../assets/menu_close.svg";
 import underline from "../../assets/nav_underline.svg";
@@ -95,7 +95,7 @@ const Main = () => {
             based in Nigeria
           </h1>
           <p>
-            I am a frontend developer from Nigeria with 2+ years of experience
+            I am a frontend developer from Nigeria with 3+ years of experience
             vast with frontend core technologies.
           </p>
           <div className="links">
