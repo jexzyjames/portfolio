@@ -9,7 +9,7 @@ import Lottie from 'lottie-react'
 import loader from '../../loader.json'
 
 const Contact = () => {
-  const form = useRef();
+  const form = useRef(); 
   const result = useRef();
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);

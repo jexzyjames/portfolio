@@ -6,6 +6,8 @@ import theme from '../../assets/theme_pattern.svg'
 import usericon from '../../assets/user_icon.svg'
 const Footer = () => {
    const[stick, setStick] = useState(false)
+   const copyright = new Date()
+   const year = copyright.getUTCFullYear()
   // useEffect(()=>{
   //   if(window.scrollY > 100){
   //     alert('hi')
@@ -38,7 +40,7 @@ const Footer = () => {
         <div className="logos">
             <h4>James</h4>
             <img src={theme} alt="" />
-            <p>I'm a frontend developer from Nigeria with 2+ years of experience vast with frontend core technologies.</p>
+            <p>I'm a frontend developer from Nigeria with 3+ years of experience vast with frontend core technologies.</p>
 
         </div>
        </div>
@@ -57,7 +59,7 @@ const Footer = () => {
       <div className="footer-bottom">
         <div className="footer-bottom-left">
           <p>
-          &copy; 2024 James Jegede. All rights reserved.
+          &copy; {year} James Jegede. All rights reserved.
             </p>  
         </div>
 
