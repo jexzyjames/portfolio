@@ -91,6 +91,10 @@
 .remove, .menu-open{
     display: none;
 }
+.ul li img{
+    width: 30px;
+    top: 20px;
+}
 .wrapper-content h1{
     width: 70%;
     text-align: center;
@@ -168,19 +172,33 @@ a{
         right: -50px;
     }
      .ul li{
-        margin: 50px;
+        margin: 15px;
         display: flex;
         position: relative;
         padding-left: 20px;
         /* gap: 20px; */
         flex-direction: row;
         text-align: center;
+    p{
+        margin: 0;
+    }
+
+        img{
+            width: 30px;
+            position: absolute;
+            display: inline-block;
+            margin: 0 !important;
+        }
+        a{
+            margin: 0;
+        }
 
     }
 
     .menu-open{
-        position: absolute;
+        position: fixed;
         display: block;
+        z-index: 122;
         right: 15px;
         cursor: pointer !important;
         width: 30px;
@@ -191,17 +209,23 @@ a{
 
      .remove{
         display: block;
-        width: 25px;
+        width: 20px;
         top:30px;
-        left: 290px;
+        cursor: pointer;
+        background-color: #DA7C25;
+        border-radius: 50%;
+        padding: 5px;
+        box-shadow: 0 0 10 rgba(98, 95, 105, 0.402);
+        left: 190px;
         position: relative;
 
      }
 .ul{
     position: fixed;
-    top: 0;
-    right: -350px;
-    width: 350px;
+    bottom: 0;
+    margin:  0;
+    right: -250px;
+    width: 250px;
     z-index: 122;
     height:100%;
     display: block;
