@@ -81,13 +81,13 @@ const Contact = () => {
         </motion.p>
         <ul>
           <li>
-            <FaEnvelope /> &nbsp; Contact@jexzyjames@gmail.com
+            <FaEnvelope /> &nbsp; jexzyjames@gmail.com
           </li>
           <li>
             <FaPhone /> &nbsp; +234-7045 666 940
           </li>
           <li>
-            <FaLocationArrow /> &nbsp; High Rise B, <br /> &nbsp; Univeristy of
+            <FaLocationArrow /> &nbsp; 30, Apesin Street, Mushin <br /> &nbsp;  
             Lagos, Nigeria
           </li>
         </ul>

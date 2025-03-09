@@ -150,7 +150,12 @@ textarea {
   }
   .contact-left ul li {
     margin-top: 30px;
+    background: linear-gradient(270deg, #3aaf9f 80%, #b415ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
     font-size: 22px;
+    
   }
 }
 @media(max-width:768px){
