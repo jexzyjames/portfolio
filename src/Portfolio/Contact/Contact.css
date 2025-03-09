@@ -43,6 +43,9 @@
 .contact-left ul {
   margin-top: 20px;
 }
+.message{
+  transition:  all 0.2s ease-in-out;
+}
 .contact-left h1 {
   text-align: left;
   background: linear-gradient(270deg, #df8908 80%, #b415ff 100%);
@@ -52,10 +55,11 @@
   font-size: 60px;
   font-weight: 700;
 }
-.contact-right label {
+.contact-right label,.message {
   background: linear-gradient(270deg, #3aaf9f 80%, #b415ff 100%);
   background-clip: text;
   -webkit-background-clip: text;
+  transition:  all 0.2s ease-in-out;
   -webkit-text-fill-color: transparent;
   font-size: 60px;
   font-weight: 700;
@@ -118,7 +122,9 @@ textarea {
   font-size: 22px;
 }
 
-
+.loader{
+  width:30px
+}
 @media (max-width: 992px) {
   .contact {
     margin: 100px 5%;

@@ -17,6 +17,23 @@
     justify-content: space-between;
     align-items: center;
 }
+
+.dp{
+    width: 400px !important;
+    height: 400px;
+    margin:auto ;
+    border: 4px solid orangered;
+    /* height:100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    border-radius: 100%;
+    object-fit: cover;
+    /* padding: 10px 20px; */
+   
+}
 .logos{
     position: relative;
 }
@@ -73,7 +90,7 @@
     flex-direction: column;
     justify-content: center;
 }
-.wrapper-content img{
+.wrapper-contents img{
     width: 400px;
     height: 300px;
     margin: auto;
@@ -97,6 +114,7 @@
 }
 .wrapper-content h1{
     width: 70%;
+    font-family:monospace;
     text-align: center;
     font-size: 55px;
 }
@@ -110,13 +128,16 @@
     width: 50%;
     font-size: 20px;
     text-align: center;
-    line-height: 40px;
+    line-height: 20px;
 }
 .links{
     display: flex;
     gap: 15px;
     align-items: center;
     justify-content: center;
+}
+.wrapper content span, .wrapper-content p{
+    font-family: monospace;
 }
 .show{display: block;}
 .target-link{
@@ -216,7 +237,7 @@ a{
         border-radius: 50%;
         padding: 5px;
         box-shadow: 0 0 10 rgba(98, 95, 105, 0.402);
-        left: 190px;
+        right: -120px;
         position: relative;
 
      }
@@ -224,8 +245,8 @@ a{
     position: fixed;
     bottom: 0;
     margin:  0;
-    right: -250px;
-    width: 250px;
+    right: -150px;
+    width: 150px;
     z-index: 122;
     height:100%;
     display: block;
@@ -297,6 +318,12 @@ a{
     .wrapper-content h1{
         font-size: 20px;
      }
+     .dp{
+        width: 300px !important;
+        height:300px;
+        margin: auto;
+     }
+    
      .wrapper-content p{
         font-size: 16px;
         width: 100%;

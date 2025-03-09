@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef,useEffect,  useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./Contact.css";
 import theme from "../assets/theme_pattern.svg";
@@ -10,6 +10,7 @@ import loader from '../../loader.json'
 
 const Contact = () => {
   const form = useRef(); 
+  let time;
   const result = useRef();
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
@@ -26,12 +27,13 @@ const Contact = () => {
       .then(
         () => {
           console.log("SUCCESS!");
-          var time = setTimeout(() => {
+           time = setTimeout(() => {
             setMessage('Email sent succesfully')
             setLoading(false)
-          }, 3000);
+          }, 2000);
 
           return () => {
+            setLoading(false)
             clearTimeout(time, 1000);
           };
         },
@@ -40,23 +42,24 @@ const Contact = () => {
           console.log("FAILED...", error.text);
            var time = setTimeout(() => {
             setMessage('Failed to send Message')
-                       }, 3000);
+                       }, 2000);
 
           return () => {
+            setLoading(false)
             clearTimeout(time, 1000);
           };
-          setLoading(false)
         }
       );
       e.target.reset();
   };
+  useEffect(()=>{},[time,message])
   return (
     <div className="contact">
         <motion.div
         initial={{ opacity: 0, translateY: -100 }}
         whileInView={{ opacity: 1, translateY: 0, transition:{delay: 0.1} }}
         whileFocus={{ opacity: 1, translateY: 0, transition:{delay:0.1} }}className="contact-title">
-          <h1>Get in touch</h1>
+          <h1> Get in touch</h1>
           <img src={theme} alt="" />
         </motion.div>
         <div className="contact-section">
@@ -125,7 +128,7 @@ const Contact = () => {
 
             }}
             fullWidth
-            type="tel"
+            type="phone"
             placeholder="Enter your mobile"
             name='phone'
             required
@@ -137,7 +140,24 @@ const Contact = () => {
             rows="6"
           ></textarea>
           {loading ? <div className="loader-div">
+            <Button
+          className="submit-btn"
+            type="submit"
+            sx={{
+              margin: "20px 0",
+              borderRadius:'50px',
+              transition:'0.6s',
+              padding:'10px 30px',
+              textTransform:'Capitalize',
+              background: 'linear-gradient(270deg, #Df8908 -5.09%, #b415ff 100.26%)',
+
+            }}
+            color="primary"
+            variant="contained"
+          >
+            
             <Lottie className="loader" animationData={loader} />
+          </Button>
           </div>
           :
           <Button
@@ -158,7 +178,7 @@ const Contact = () => {
             Submit Now
           </Button>
         }
-        <p>{message}</p>
+        <p className="message">{message}</p>
           <br/>
           {/* <div>
             {loading && <p>{message}</p> }

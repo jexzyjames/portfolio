@@ -41,35 +41,62 @@ const Main = () => {
           <li>
             {" "}
             <Link offset={0} duration={500} to="main">
-              <p onClick={() => setIsOpen("home")}>Home</p>
-              {isOpen === "home" ? <img src={underline} alt="" /> : ""}
+              <p onClick={() =>{
+
+                setIsOpen("home")
+                closeMenu();
+              }
+                 }>Home</p>
+              {isOpen === "home" ? <img  src={underline} alt="" /> : ""}
             </Link>
           </li>
           <li>
             {" "}
             <Link offset={-150} duration={500} to="about-me">
-              <p onClick={() => setIsOpen("about-me")}>About me</p>
+              <p onClick={() => {
+
+                setIsOpen("about-me")
+                closeMenu();
+              }
+                }>About me</p>
               {isOpen === "about-me" ? <img src={underline} alt="" /> : ""}
             </Link>
           </li>
           <li>
             {" "}
             <Link offset={-260} duration={500} to="works">
-              <p onClick={() => setIsOpen("works")}>Services</p>
+              <p onClick={() => 
+              {
+
+                setIsOpen("works")
+                closeMenu();
+              }
+
+              }>Services</p>
               {isOpen === "works" ? <img src={underline} alt="" /> : ""}
             </Link>
           </li>
           <li>
             {" "}
             <Link offset={-260} duration={500} to="services">
-              <p onClick={() => setIsOpen("services")}>My work</p>
+              <p onClick={() =>{
+
+                setIsOpen("services")
+                closeMenu();
+              }
+                 }>My works</p>
               {isOpen === "services" ? <img src={underline} alt="" /> : ""}
             </Link>
           </li>
           <li>
             {" "}
             <Link offset={-260} duration={500} to="contact">
-              <p onClick={() => setIsOpen("contact")}>Contact</p>
+              <p onClick={() =>  {
+
+                setIsOpen("contact")
+                closeMenu();
+              }
+                }>Contact</p>
               {isOpen === "contact" ? <img src={underline} alt="" /> : ""}
             </Link>
           </li>
@@ -88,7 +115,10 @@ const Main = () => {
         className="wrapper"
       >
         <div className="wrapper-content">
-          <img src={img} alt="" />
+          <div className="image-wrapper">
+
+          <img className='dp' src={img} alt="" />
+          </div>
           <h1>
             {" "}
             <span className="font">I'm James Jegede,</span> frontend developer

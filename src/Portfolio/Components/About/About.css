@@ -38,6 +38,10 @@
 }
 .details-right{
     flex-basis: 70%;
+    background: #333;
+    /* padding:1rem; */
+    box-shadow: rgba(0, 0, 0, 0.4) ;
+    border-radius: 10px;
 }
 .image-left img{
     width: 80%;
@@ -61,7 +65,7 @@
 
 .skills{
     display: flex;
-    margin: 10px 0;
+    margin: 0px 0;
     flex-direction: column;
     gap: 0px;
 }
@@ -97,12 +101,47 @@
     border-radius: 50px;
     background: linear-gradient(264deg, #dF8908 -5.09%, #B415FF 106.28%);
 }
-.experience{
+.content {
+    display: block;
+    padding: 1rem;
+    max-width: 700px;
+    height: 300px;
+    max-height: 300px;
+    width: 700px;
+    margin: 10px auto;
+    transition: all 0.3s ease-in-out;
+}
+.clicked.tabs{
+    color:#B415FF;
+    border-bottom: 2px solid #DF8908;
+}
+.tabs{
+    padding: 10px 15px;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+.active-tab{
+    border-left: 3px solid #ddd;
+    color: #ffffff;
+    background: linear-gradient(264deg, #DF8908 50.41%, #B415FF 90.25%);
+    font-weight: 100;
+}
+.nav-tabs{
     display: flex;
-    margin-bottom: 80px;
+    padding: 10px;
+    cursor:pointer;
+    font-size: 20px;
+    background: gray;
+    justify-content: space-between;
+    width: 100%;
+}
+.experience{
+    /* display: flex; */
+    /* margin-bottom: 80px; */
     /* margin: 0 !important; */
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 .years{
     display: flex;
@@ -110,6 +149,8 @@
     position: relative;
     gap: 10px;
     transition: 0.5s;
+    color:#3aaf8f;
+    margin-bottom: 10px;
     align-items: center;
     justify-content: center;
 
@@ -127,13 +168,42 @@
     background-clip: text;
     -webkit-background-clip:text;
     -webkit-text-fill-color: transparent;
+    font-family: monospace;
     font-weight:700 ;
 }
 .years h5{
     font-weight: 500;
 }
+.js{
+    color: #dF8908;
+    margin-right: 5px;
+}
+.react{
+     color: lightblue;
+     border: 0;
+     margin-right: 5px;
+}
+.html{
+    color: red;
+    margin-right:5px;
+}
+.css{
+    color: skyblue;
+    margin-right: 5px;
+}
+.infos p, .skills p, .experience p{
+    font-family: monospace;
+    color: #3aaf9f;
 
-
+}
+.skillss p{
+    font-size: 18px;
+}
+.passion{
+    margin-top: 3px ;
+    margin-top: 10px !important;
+    font-family: monospace;
+}
 @media (max-width:992px){
     .about-me{
         /* padding:auto!important ; */
@@ -162,6 +232,21 @@
     .experience{
         flex-direction: column;
         gap: 10px;
+    }
+    .content{
+        width:100%;
+        height: 100%;
+        max-height: 300px;
+        overflow: scroll;
+    }
+    .years h2{
+        font-size: 30px;
+    }
+    .infos p, .skills p{
+        font-size:15px;
+    }
+    .nav-tabs {
+        font-size: 15px;
     }
 
 }
