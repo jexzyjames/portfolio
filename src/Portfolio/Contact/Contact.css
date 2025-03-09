@@ -124,6 +124,10 @@ textarea {
   list-style: none;
   display: flex;
   align-items: center;
+  background: linear-gradient(270deg, #3aaf9f 80%, #b415ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   margin: 20px 0;
   font-size: 22px;
 }
