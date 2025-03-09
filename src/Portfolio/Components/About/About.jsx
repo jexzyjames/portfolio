@@ -3,7 +3,8 @@ import "./About.css";
 import img from "../../assets/jj.jpg";
 import theme from "../../assets/theme_pattern.svg";
 import { motion } from "framer-motion";
-import { FaCss3, FaHtml5, FaJs, FaReact } from "react-icons/fa";
+import {  FaReact,FaPaw } from "react-icons/fa";
+import { SiRedux, SiHtml5, SiCss3,SiJavascript, SiTailwindcss, SiMui  } from "react-icons/si";
 const About = () => {
   const[activeTab, seetActiveTab] = useState('about')
   return (
@@ -125,25 +126,31 @@ const About = () => {
               <div >
 
               <div className="labelled">
-                <p> <FaHtml5 className="html"/> HTML  </p> <hr style={{ width: "70%" }} />{" "}
+                <p> <SiHtml5 className="html"/> HTML  </p> <hr style={{ width: "70%" }} />{" "}
               </div>
               <div className="labelled">
-                <p><FaCss3 className="css"/> CSS </p> <hr style={{ width: "70%" }} />{" "}
+                <p><SiCss3 className="css"/> CSS </p> <hr style={{ width: "70%" }} />{" "}
               </div>
               <div className="labelled">
-                <p> <FaReact className='react' /> React JS </p> <hr style={{ width: "50%" }} />{" "}
+                <p> <FaReact className='react' /> React JS </p> <hr style={{ width: "70%" }} />{" "}
               </div>
-              {/* <div className="labelled">
+              <div className="labelled">
+                <p> <SiRedux className='redux'  /> Redux </p> <hr style={{ width: "50%" }} />{" "}
+              </div>
+              <div className="labelled">
+                <p> <FaPaw  className='zustand'  /> Zustand </p> <hr style={{ width: "50%" }} />{" "}
+              </div>
+              {/* <div className="label led">
                 <p> <FaReact className='react' /> Redux  </p> <hr style={{ width: "50%" }} />{" "}
               </div> */}
               <div className="labelled">
-                <p> <FaJs className='js'  />   Javascript </p> <hr style={{ width: "60%" }} />{" "}
+                <p> <SiJavascript className='js'  />   Javascript </p> <hr style={{ width: "60%" }} />{" "}
               </div>
               <div className="labelled">
-                <p>  Material UI </p> <hr style={{ width: "40%" }} />{" "}
+                <p> <SiMui style={{ color: 'blue', marginRight: '10px' }} />  MUI </p> <hr style={{ width: "40%" }} />{" "}
               </div>
               <div className="labelled">
-                <p> <FaCss3/> Tailwind   </p> <hr style={{ width: "60%" }} />{" "}
+                <p> <SiTailwindcss style={{ color: 'skyblue', marginRight: '5px' }} /> Tailwind   </p> <hr style={{ width: "60%" }} />{" "}
               </div>
               </div>
 

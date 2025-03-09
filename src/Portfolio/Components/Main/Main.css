@@ -144,6 +144,7 @@
     padding: 10px 30px;
     cursor: pointer;
     color: aliceblue;
+    font-family: monospace !important;
     font-size: 22px;
     border-radius: 50px;
     background: linear-gradient(267deg,#DA7C25 0.36%, #B923E1 102.06%);
@@ -154,6 +155,7 @@
     background: transparent;
     font-size: 22px;
     display: flex;
+    font-family:monospace;
     align-items: center;
     gap: 5px;
     text-decoration: none;
@@ -169,6 +171,8 @@ a{
     cursor: pointer;
     color: aliceblue;
     font-size: 22px;
+    font-family:monospace;
+    border: 1px solid #fff;
     border-radius: 50px;
 }
 .menu-open,.remove{

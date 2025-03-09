@@ -6,6 +6,7 @@
     /* background-color: navy; */
     justify-content: center;
     box-sizing: border-box;
+    font-family: monospace;
     overflow: hidden;
     flex-direction: column;
 }

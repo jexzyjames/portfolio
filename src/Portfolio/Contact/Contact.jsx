@@ -70,6 +70,7 @@ const Contact = () => {
       className="contact-left">
         <h1>Let's talk</h1>
         <motion.p
+        style={{fontSize: 'monospace'}}
          initial={{ opacity: 0, translateY: -100 }}
          whileInView={{ opacity: 1, translateY: 0, transition:{delay: 0.1} }}
         >

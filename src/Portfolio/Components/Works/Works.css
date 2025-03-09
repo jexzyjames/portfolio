@@ -5,6 +5,7 @@
     align-items: center;
     gap: 80px;
     padding: 100px 170px;
+    font-family: monospace;
     overflow: hidden;
     margin: auto;
     box-sizing: border-box;
