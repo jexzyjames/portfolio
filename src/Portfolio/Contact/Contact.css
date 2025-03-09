@@ -144,7 +144,7 @@ textarea {
   .contact-left p {
     text-align: left;
     max-width: 100%;
-    font-family: Outfit;
+    font-family:  monospace ;
     line-height: 1.5;
     font-size: 22px;
   }

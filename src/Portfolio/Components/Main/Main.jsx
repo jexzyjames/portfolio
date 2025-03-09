@@ -131,13 +131,14 @@ const Main = () => {
           <div className="links">
             <a
               className="target-link"
+              target="_blank"
               href="https://linkedin.com/in/james-jegede"
             >
               <button className="connect-btn">
                 Connect with me <FaLinkedin />{" "}
               </button>
             </a>
-            <a href="https://drive.google.com/file/d/1R3juSWTnJN0bnwuyF-5Gtza-W4Xura2_/view?usp=drivesdk">
+            <a target="_blank" href="https://drive.google.com/file/d/12GkU9lzt7emdbDH-_ulC4HSGAp-zMQLp/view?usp=sharing">
               <button className="resume-btn">My resume</button>
             </a>
           </div>
