@@ -76,8 +76,7 @@ const Contact = () => {
         >
           Feel free to reach out through contact form or find our contact
           information below. Your feedback, questions, and suggestionss are
-          important to us as we strive to provide exceptional service to our
-          university community.
+          important to us as we strive to provide exceptional services to our clients and community.
         </motion.p>
         <ul>
           <li>
