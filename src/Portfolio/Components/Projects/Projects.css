@@ -49,6 +49,9 @@
     transition: 0.4s;
     cursor: pointer;
 }
+.format.lights{
+    border: 2px solid #333;
+}
 .format p{
     text-align: left;
     color: #DF8908;

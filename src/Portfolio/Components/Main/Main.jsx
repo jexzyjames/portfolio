@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef , useEffect} from "react";
 import img from "../../assets/cover.jpg";
 import menu from "../../assets/menu_open.svg";
 import close from "../../assets/menu_close.svg";
@@ -10,33 +10,38 @@ import {
   FaLinkedin,
   FaLinkedinIn,
   FaReact,
+  FaSun, 
+  FaMoon,
   FaJs,
   FaHtml5,
   FaCss3,
+  FaAlignJustify,
 } from "react-icons/fa";
-// import cert from '../../assets/cert.PNG'
 import { motion } from "framer-motion";
-const Main = () => {
+const Main = ({theme}) => {
+  useEffect(()=> {},{theme})
+  
   const menuRef = useRef(null);
-
   const openMenu = () => {
-    menuRef.current.style.right = "0";
+
+       menuRef.current.style.right = '0';
   };
 
   const closeMenu = () => {
-    menuRef.current.style.right = "-350px";
+    menuRef.current.style.right = '-150px';
   };
   const [isOpen, setIsOpen] = useState("home");
   // const [resume, setResume] = useState(false);
   return (
-    <div className="main">
+    <div  className="main">
       <div className="top">
         <div className="logos">
           <h4>James</h4>
           <img src={theme} alt="" />
         </div>
-        <img className="menu-open" onClick={openMenu} src={menu} alt="" />
-        <ul ref={menuRef} className="ul">
+
+        <FaAlignJustify className={` lighted ${theme} === 'light' ?  'light' : 'darks' `} onClick={openMenu} src={menu} alt="" />
+        <ul ref={menuRef} className={`ul ${theme === 'light' ? 'darks' : 'lights'}`}>
           <img className="remove" onClick={closeMenu} src={close} alt="" />
           <li>
             {" "}

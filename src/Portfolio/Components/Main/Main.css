@@ -179,6 +179,10 @@ a{
 .menu-open,.remove{
     cursor: pointer;
 }
+.lighted.darks{
+    color:#333 !important ;
+        background: #333 !important ;
+     }
 .logos img{
     width: 30px;
     position: relative;
@@ -221,10 +225,18 @@ a{
 
     }
 
-    .menu-open{
+    
+   
+    
+    /* .lighted.light{
+        color:#333 ;
+        background: #fff ;
+    } */
+    .lighted{
         position: fixed;
         display: block;
         z-index: 122;
+        top:38px;
         right: 15px;
         cursor: pointer !important;
         width: 30px;
@@ -298,6 +310,10 @@ a{
      .ul li{
         display: block;
        
+     }
+     .lighted.darks{
+    color:#333 !important ;
+        background: #333 !important ;
      }
      .wrapper{
         padding: 10px 0;

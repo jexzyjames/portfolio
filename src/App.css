@@ -4,7 +4,80 @@
 body{
     color: #fff;
     background: #161513;
-    height: 100vh;
     font-family:'Open Sans', sans-serif;
+    overflow-x: hidden;
 
+
+}
+.light{
+    color: #333;
+    background: #ffffff;
+    animation: fadeIn 0.4s ease-in-out;
+    transition: all 0.4s;
+}
+.dark{
+    background-color: #161513;
+    color:#fff !important; 
+    animation: fadeIn 0.4s ease-in-out;
+    transition: all 0.4s;
+}
+
+
+.mail.light{
+    color:#161513 ;
+}
+.contact-left ul li.dark{
+    color:red !important;
+    opacity: 0;
+    background: red !important;
+}
+.ul.lights{
+    color: white ;
+}
+.ul.darks{
+    color: black ;
+    background-color: inherrit !important;
+}
+.lighted{
+    display: none;
+}
+.theme {
+    display: flex;
+    justify-content: end;
+    position: fixed;
+    top:50px;
+    right:50px ;
+    align-items: center;
+    cursor: pointer !important;
+    font-size: 1rem;
+}
+.sun, .moon{
+    cursor: pointer !important;
+}
+
+@media screen and (max-width: 768px){
+    .ul.light{
+        font-size: 0.8rem;
+        color: #fff !important;
+        background-color: #777 !important;
+    }
+    .ul.darks{
+        font-size: 0.8rem;
+        color: #fff !important;
+    }
+    .sun, .moon{
+        cursor: pointer !important;
+    }
+    .theme {
+        display: flex;
+        justify-content: end;
+        position: fixed;
+        top: 38px;
+        right:50px ;
+        z-index: 120;
+        align-items: center;
+        cursor: pointer !important;
+        font-size: 1rem;
+    }
+    
 }

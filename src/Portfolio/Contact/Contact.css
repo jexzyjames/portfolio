@@ -73,6 +73,13 @@
   font-size: 22px;
   font-weight: 700;
 }
+::placeholder{
+  background: linear-gradient(270deg, #3aaf9f 80%, #b415ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: all 0.2s ease-in-out;
+  -webkit-text-fill-color: transparent;
+}
 .contact-right input {
   background: linear-gradient(270deg, #df8908 80%, #b415ff 100%);
   background-clip: text;

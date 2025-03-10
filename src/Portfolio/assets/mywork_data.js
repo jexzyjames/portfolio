@@ -23,7 +23,7 @@ const mywork_data = [
         w_no:2,
         w_name:"Web design",
         w_img:unilag,
-        text:'The Landing Page of the University of Lagos replicated',
+        text:'The Landing Page of the  University of Lagos Student Portal  replicated',
         language:{
             text1: 'html',
             text2: 'css',

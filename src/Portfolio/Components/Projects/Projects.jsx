@@ -4,7 +4,7 @@ import theme from "../../assets/theme_pattern.svg";
 import arrow from "../../assets/arrow_icon.svg";
 import "./Projects.css";
 import { motion, useAnimation } from "framer-motion";
-const Projects = () => {
+const Projects = ({theme}) => {
   const [datas] = useState(data);
   return (
     <motion.div 
@@ -22,7 +22,7 @@ const Projects = () => {
             <motion.div
               initial={{ opacity: 0, translateY: -100 }}
               whileInView={{ opacity: 1, translateY: 0, transition:{delay: 0} }}
-              className="format"
+              className={`format ${theme === 'light' ? 'lights' :  null } `}
               key={id}
             >
               <div className="format-content">

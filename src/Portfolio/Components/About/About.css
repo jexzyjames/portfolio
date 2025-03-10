@@ -51,7 +51,8 @@
 .infos{
     display: flex;
     flex-direction: column;
-    animation : fadeIn 0.4s ease-in-out;
+    animation : fadeIn 0.7s ease-in-out;
+    transition: all 0.5s ease-in-out;
     gap:10px;
 }
 .infos p{
@@ -67,7 +68,8 @@
 .skills{
     display: flex;
     margin: 0px 0;
-    animation : fadeIn 0.4s ease-in-out;
+    animation : fadeIn 0.7s ease-in-out;
+    transition: all 0.5s ease-in-out;
     flex-direction: column;
     gap: 0px;
 }
@@ -111,15 +113,17 @@
     max-height: 400px;
     width: 700px;
     margin: 10px auto;
-    transition: all 0.3s ease-in-out;
-    animation : fadeIn 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    animation : fadeIn 0.7s ease-in-out alternate-reverse ;
 }
 @keyframes fadeIn {
     0%{
         opacity: 0;
+        background-color: none;
     }
     100%{
         opacity: 1;
+        background-color: #333;
     }
 }
 .clicked.tabs{
@@ -144,7 +148,8 @@
     padding: 10px;
     cursor:pointer;
     font-size: 20px;
-    background: gray;
+    background: lightslategray;
+    color: #fff;
     justify-content: space-between;
     width: 100%;
 }

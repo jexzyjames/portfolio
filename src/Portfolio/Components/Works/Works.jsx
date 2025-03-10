@@ -6,7 +6,7 @@ import { FaLinkedin, FaLinkedinIn, FaReact, FaJs, FaHtml5, FaCss3, FaJsfiddle } 
 import {DiJsBadge,DiCss3} from 'react-icons/di'
 import { motion } from 'framer-motion'
 import './Works.css'
-const Works = () => {
+const Works = ({theme}) => {
     const [more, SetMore] = useState(false)
   return (
     <div className='services'>
@@ -45,7 +45,7 @@ const Works = () => {
                                 <li>{item.language.text4}  </li>
                             </ul>
                         </motion.div>
-                    <a className='target' href={item.link}>
+                    <a target='_blank' className='target' href={item.link}>
                     <button className='target-link'>Check out</button>
                     </a>
                     </motion.div>
