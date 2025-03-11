@@ -181,7 +181,7 @@ a{
 }
 .lighted.darks{
     color:#333 !important ;
-        background: #333 !important ;
+        background: transparent !important ;
      }
 .logos img{
     width: 30px;
@@ -244,6 +244,10 @@ a{
     overflow: hidden;
 
     }
+    .lighted.darks{
+        color:#333 !important ;
+            background: transparent !important ;
+         }
 
      .remove{
         display: block;
@@ -313,7 +317,7 @@ a{
      }
      .lighted.darks{
     color:#333 !important ;
-        background: #333 !important ;
+        background: transparent !important ;
      }
      .wrapper{
         padding: 10px 0;
@@ -344,7 +348,10 @@ a{
         height:300px;
         margin: auto;
      }
-    
+     .lighted.darks{
+        color:#333 !important ;
+            background: transparent !important ;
+         }
      .wrapper-content p{
         font-size: 16px;
         width: 100%;

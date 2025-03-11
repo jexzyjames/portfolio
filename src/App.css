@@ -54,8 +54,19 @@ body{
 .sun, .moon{
     cursor: pointer !important;
 }
-
-@media screen and (max-width: 768px){
+@media screen and (max-width:1200px){
+    .theme{
+        top:50px;
+        right:20px;
+        /* margin-left: 20px; */
+    }
+}
+@media screen and (max-width:992px){
+    .theme{
+        top:37px;
+    }
+}
+@media screen and (max-width: 991px){
     .ul.light{
         font-size: 0.8rem;
         color: #fff !important;

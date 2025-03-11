@@ -2,7 +2,6 @@ import ratings from '../assets/ratings.png'
 import unilag from '../assets/unilagrepl.png'
 import tracker from '../assets/tracker.png'
 import edu from '../assets/edu.png'
-import { FaLinkedin, FaLinkedinIn, FaReact, FaJs, FaHtml5, FaCss3 } from "react-icons/fa";
 
 import ecommerce from '../assets/ecommerce.png'
 // import tracker from '../assets/tracker.png'
