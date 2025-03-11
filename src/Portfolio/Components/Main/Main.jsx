@@ -9,13 +9,6 @@ import themes from "../../assets/theme_pattern.svg";
 import { Link } from "react-scroll";
 import {
   FaLinkedin,
-  FaLinkedinIn,
-  FaReact,
-  FaSun, 
-  FaMoon,
-  FaJs,
-  FaHtml5,
-  FaCss3,
   FaAlignJustify,
 } from "react-icons/fa";
 import { motion } from "framer-motion";
@@ -144,7 +137,7 @@ const Main = ({theme}) => {
                 Connect with me <FaLinkedin />{" "}
               </button>
             </a>
-            <a target="_blank" href="https://drive.google.com/file/d/12GkU9lzt7emdbDH-_ulC4HSGAp-zMQLp/view?usp=sharing">
+            <a target="_blank" rel="noreferrer" href="https://drive.google.com/file/d/12GkU9lzt7emdbDH-_ulC4HSGAp-zMQLp/view?usp=sharing">
               <button className="resume-btn">My resume</button>
             </a>
           </div>

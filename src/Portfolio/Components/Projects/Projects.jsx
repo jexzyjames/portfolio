@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import data from "../../assets/services_data";
 import "./Projects.css";
 import themes from "../../assets/theme_pattern.svg";
-import { motion, useAnimation } from "framer-motion";
+import { motion } from "framer-motion";
 const Projects = ({theme}) => {
   const [datas] = useState(data);
   return (
