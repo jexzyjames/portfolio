@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import data from "../../assets/services_data";
-import theme from "../../assets/theme_pattern.svg";
-import arrow from "../../assets/arrow_icon.svg";
 import "./Projects.css";
+import themes from "../../assets/theme_pattern.svg";
 import { motion, useAnimation } from "framer-motion";
 const Projects = ({theme}) => {
   const [datas] = useState(data);
@@ -14,7 +13,7 @@ const Projects = ({theme}) => {
     className="works">
       <div className="works-title">
         <h1>My Services</h1>
-        <img src={theme} alt="" />
+        <img src={themes} alt="" />
       </div>
       <div className="works-container">
         {datas.map((item, id) => {

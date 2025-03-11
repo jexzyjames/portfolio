@@ -9,14 +9,6 @@ import { FaSun, FaMoon } from 'react-icons/fa';
 import './App.css'
 const App = () => {
     const [theme, setTheme] = useState('dark')
-    // useEffect(()=>{
-    //     if(localStorage.getItem('theme') === 'light'){
-    //         setTheme('dark')
-    //     }
-    //     else{
-    //         setTheme('light')
-    //     }
-    // },[])
   return (
     <div style={{position:'relative'}} className={`${theme} === 'light' ? 'light' : 'dark'  `} >
         <Main theme={theme}/>

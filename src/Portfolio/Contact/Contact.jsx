@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./Contact.css";
-import theme from "../assets/theme_pattern.svg";
+import themes from "../assets/theme_pattern.svg";
 import { FaEnvelope, FaPhone, FaLocationArrow } from "react-icons/fa";
 import { TextField, Button } from "@mui/material";
 import { motion } from "framer-motion";
@@ -11,11 +11,8 @@ import loader from "../../loader.json";
 const Contact = ({theme}) => {
   const form = useRef();
   let time;
-  const result = useRef();
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
-  let Names;
-  let Phone;
   const sendEmail = (e) => {
     e.preventDefault();
     setLoading(true);
@@ -62,7 +59,7 @@ const Contact = ({theme}) => {
         className="contact-title"
       >
         <h1 className={`${theme === 'light' ? 'light' : null}`}> Get in touch</h1>
-        <img src={theme} alt="" />
+        <img src={themes} alt="" />
       </motion.div>
       <div className="contact-section">
         <motion.div
@@ -76,7 +73,7 @@ const Contact = ({theme}) => {
         >
           <h1>Let's talk</h1>
           <motion.p
-            style={{ fontSize: "monospace" }}
+          className={ `contact-text ${theme} === 'light' ? 'light' : 'dark' `}
             initial={{ opacity: 0, translateY: -100 }}
             whileInView={{
               opacity: 1,
@@ -123,7 +120,6 @@ const Contact = ({theme}) => {
             margin="20px 0"
             fullWidth
           >
-            {/* <FormControlLabel/> */}
             <label htmlFor="name">Your Name</label>
             <TextField
               sx={{
@@ -153,6 +149,7 @@ const Contact = ({theme}) => {
             <label htmlFor="message">Write your message here</label>
             <textarea
               name="message"
+              className={`textarea ${theme === 'light' ? 'light' : 'dark'}`}
               placeholder="Enter your message"
               rows="6"
             ></textarea>
@@ -197,9 +194,7 @@ const Contact = ({theme}) => {
             )}
             <p className="message">{message}</p>
             <br />
-            {/* <div>
-            {loading && <p>{message}</p> }
-          </div> */}
+          
           </form>
         </div>
       </div>

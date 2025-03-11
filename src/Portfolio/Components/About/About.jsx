@@ -1,7 +1,7 @@
 import React,{useState} from "react";
 import "./About.css";
 import img from "../../assets/jj.jpg";
-import theme from "../../assets/theme_pattern.svg";
+import themes from "../../assets/theme_pattern.svg";
 import { motion } from "framer-motion";
 import {  FaReact,FaPaw } from "react-icons/fa";
 import { SiRedux, SiHtml5, SiCss3,SiJavascript, SiTailwindcss, SiMui  } from "react-icons/si";
@@ -11,7 +11,7 @@ const About = () => {
     <div className="about-me">
       <div className="about-title">
         <h1>About me</h1>
-        <img src={theme} alt="" />
+        <img src={themes} alt="" />
       </div>
 
       <div className="about-section">

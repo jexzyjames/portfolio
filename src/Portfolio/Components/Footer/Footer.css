@@ -8,7 +8,7 @@
     /* /* width:100%;  */
     box-sizing:border-box;
     /* padding:10px; */
-    margin:100px 150px;
+    margin:100px 150px 0;
     font-family:monospace;
     position:relative;
     overflow:hidden;
@@ -111,7 +111,8 @@ html{
 @media(max-width:992px){
     .Footer{
         flex-direction: column;
-        margin: 50px 3%;
+        margin: 50px 3% 0;
+        margin-bottom: 0 !important;
     }
     .footer-top{
         justify-content: center;
