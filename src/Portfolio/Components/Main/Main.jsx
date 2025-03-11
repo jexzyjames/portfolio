@@ -1,4 +1,4 @@
-import React, { useState, useRef , useEffect} from "react";
+import React, { useState, useRef} from "react";
 import img from "../../assets/cover.jpg";
 import menu from "../../assets/menu_open.svg";
 import close from "../../assets/menu_close.svg";
@@ -13,7 +13,6 @@ import {
 } from "react-icons/fa";
 import { motion } from "framer-motion";
 const Main = ({theme}) => {
-  useEffect(()=> {},{theme})
   
   const menuRef = useRef(null);
   const openMenu = () => {
@@ -25,7 +24,6 @@ const Main = ({theme}) => {
     menuRef.current.style.right = '-150px';
   };
   const [isOpen, setIsOpen] = useState("home");
-  // const [resume, setResume] = useState(false);
   return (
     <div  className="main">
       <div className="top">
@@ -131,13 +129,14 @@ const Main = ({theme}) => {
             <a
               className="target-link"
               target="_blank"
+              rel="noopener noreferrer"
               href="https://linkedin.com/in/james-jegede"
             >
               <button className="connect-btn">
                 Connect with me <FaLinkedin />{" "}
               </button>
             </a>
-            <a target="_blank" rel="noreferrer" href="https://drive.google.com/file/d/12GkU9lzt7emdbDH-_ulC4HSGAp-zMQLp/view?usp=sharing">
+            <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/12GkU9lzt7emdbDH-_ulC4HSGAp-zMQLp/view?usp=sharing">
               <button className="resume-btn">My resume</button>
             </a>
           </div>

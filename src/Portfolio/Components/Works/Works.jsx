@@ -44,7 +44,7 @@ const Works = () => {
                                 <li>{item.language.text4}  </li>
                             </ul>
                         </motion.div>
-                    <a target='_blank' rel='noreferrer' className='target' href={item.link}>
+                    <a target='_blank' rel='noopener noreferrer' className='target' href={item.link}>
                     <button className='target-link'>Check out</button>
                     </a>
                     </motion.div>
