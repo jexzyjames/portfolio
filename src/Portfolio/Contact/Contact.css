@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 .contact {
   margin: 100px 170px;
   align-items: center;
@@ -45,7 +45,7 @@
 }
 .contact-text {
   line-height: 1.3 !important;
-  font-family: 'Dancing Scipt', cursive !important;
+  font-family: 'Poppins' , monospace !important;
   -webkit-font-smoothing: antialiased;
 text-rendering: optimizeLegibility;
   
