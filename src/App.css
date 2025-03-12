@@ -54,7 +54,7 @@ body{
 }
 .theme {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     position: fixed;
     top:50px;
     right:50px ;
@@ -92,7 +92,7 @@ body{
     }
     .theme {
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
         position: fixed;
         top: 38px;
         right:50px ;
