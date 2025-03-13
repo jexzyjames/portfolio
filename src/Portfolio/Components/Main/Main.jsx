@@ -12,6 +12,8 @@ import {
   FaAlignJustify,
 } from "react-icons/fa";
 import { motion } from "framer-motion";
+import ScrollProgress from "../ScrollProgress";
+import CircularScrollProgress from "../CirrcularScrollProgress";
 const Main = ({theme}) => {
   
   const menuRef = useRef(null);

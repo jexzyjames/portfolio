@@ -10,6 +10,17 @@ body{
     padding: 0 !important;
 
 }
+.scroll-progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 5px;
+    background: #3b82f6; /* Blue color */
+    width: 0%;
+    transition: width 0.2s ease-out;
+    z-index: 9999;
+  }
+  
 .light{
     color: #333;
     background: #ffffff;

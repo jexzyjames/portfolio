@@ -13,9 +13,9 @@ const Contact = ({theme}) => {
   let time;
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
+ 
   const sendEmail = (e) => {
-    e.preventDefault();
-    setLoading(true);
+     setLoading(true);
 
     emailjs
       .sendForm("service_hmhmjdo", "template_uazi2if", form.current, {
@@ -49,7 +49,14 @@ const Contact = ({theme}) => {
       );
     e.target.reset();
   };
-  useEffect(() => {}, [time, message]);
+  useEffect(() => {
+    // sendEmail()
+
+    return () => {
+      clearTimeout(time, 1000);
+    };
+  },
+   [time, message]);
   return (
     <div className="contact">
       <motion.div
@@ -110,7 +117,12 @@ const Contact = ({theme}) => {
         <div className="contact-right">
           <form
             ref={form}
-            onSubmit={sendEmail}
+            onSubmit={(e)=>{
+
+              e.preventDefault();
+              sendEmail(e)
+
+            }}
             sx={{
               margin: "20px 0",
               padding: "1rem",

@@ -4,6 +4,8 @@ import { Link } from "react-scroll";
 import {FaArrowUp} from 'react-icons/fa'
 import theme from '../../assets/theme_pattern.svg'
 import usericon from '../../assets/user_icon.svg'
+import CircularScrollProgress from '../CirrcularScrollProgress';
+import ScrollProgress from '../ScrollProgress';
 const Footer = () => {
    const[stick, setStick] = useState(false)
    const copyright = new Date()
@@ -27,9 +29,16 @@ const Footer = () => {
   },[stick]);
   return (
     <div className='Footer'>
+      {/* <div className="arrow square"> */}
+        {/* <ScrollProgress/>  */}
 
+      {/* </div> */}
+
+      {/* <div className='arrow circular'> */}
+
+      {/* <CircularScrollProgress/> */}
+      {/* </div> */}
       {stick && <>
-      
       <Link to='main'>
       <FaArrowUp className='arrow'/>
 
