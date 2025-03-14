@@ -14,6 +14,7 @@
 }
 .top{
     display:flex;
+    position:relative;
     margin: 20px auto;
     justify-content: space-between;
     align-items: center;
@@ -36,7 +37,9 @@
    
 }
 .logos{
-    position: relative;
+    position: fixed;
+    display:flex;
+    margin-right:auto;
 }
 .logos h4{
     background:linear-gradient(267deg,#DA7C25 0.36%, #B923E1 102.06%); 
