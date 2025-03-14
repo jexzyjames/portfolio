@@ -15,7 +15,7 @@ const App = () => {
   return (
     <div style={{position:'relative'}} className={`${theme} === 'light' ? 'light' : 'dark'  `} >
         <ScrollProgress  />  
-        {/* <CircularScrollProgress/>   */}
+        <CircularScrollProgress/>  
         <Main theme={theme}/>
       <div className='theme'>
                { theme === 'dark' &&  <FaSun  className="sun" onClick={()=> setTheme('light')}/>}
