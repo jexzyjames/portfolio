@@ -23,7 +23,7 @@ const Main = ({theme}) => {
   };
 
   const closeMenu = () => {
-    menuRef.current.style.right = '-150px';
+    menuRef.current.style.right = '-180px';
   };
   const [isOpen, setIsOpen] = useState("home");
   return (

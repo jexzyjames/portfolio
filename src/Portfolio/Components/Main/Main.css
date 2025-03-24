@@ -37,7 +37,7 @@
    
 }
 .logos{
-    position: fixed;
+    position: relative;
     display:flex;
     margin-right:auto;
 }
@@ -255,22 +255,24 @@ a{
      .remove{
         display: block;
         width: 20px;
-        top:30px;
+        top:10px;
         cursor: pointer;
         background-color: #DA7C25;
         border-radius: 50%;
         padding: 5px;
+        /* margin-bottom: 10px; */
         box-shadow: 0 0 10 rgba(98, 95, 105, 0.402);
-        right: -120px;
-        position: relative;
+        right: 10px;
+        position: absolute;
 
      }
 .ul{
     position: fixed;
     bottom: 0;
     margin:  0;
-    right: -150px;
-    width: 150px;
+    right: -100px;
+    width: 180px;
+    top:10px;
     z-index: 122;
     height:100%;
     display: block;
