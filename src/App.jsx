@@ -8,7 +8,6 @@ import Footer from './Portfolio/Components/Footer/Footer';
 import { FaSun, FaMoon } from 'react-icons/fa';
 import './App.css'
 import ScrollProgress from './Portfolio/Components/ScrollProgress';
-import { CircularProgress } from '@mui/material';
 import CircularScrollProgress from './Portfolio/Components/CirrcularScrollProgress';
 import JobBoard from './job/JobBoard';
 const App = () => {
