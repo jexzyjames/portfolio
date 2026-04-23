@@ -71,7 +71,7 @@ const mywork_data = [
         {
         w_no:6,
         w_name:"Web design",
-        w_img:ecommerce,
+        w_img:waste,
         text:'A landing page of a Recycling app Empowering everyday Africans Using AI and gamified learning to transform how Africa recycles - starting with you.',
         language:{
             text1: 'html',
