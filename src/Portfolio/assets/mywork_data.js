@@ -2,7 +2,7 @@ import ratings from '../assets/ratings.png'
 import unilag from '../assets/unilagrepl.png'
 import tracker from '../assets/tracker.png'
 import edu from '../assets/edu.png'
-
+import waste from '../assets/Waste.jpg'
 import ecommerce from '../assets/ecommerce.png'
 // import tracker from '../assets/tracker.png'
 const mywork_data = [
