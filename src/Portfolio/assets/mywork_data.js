@@ -68,6 +68,19 @@ const mywork_data = [
         },
         link:'https://ecommerce-phi-one-77.vercel.app/'
     },
+        {
+        w_no:6,
+        w_name:"Web design",
+        w_img:ecommerce,
+        text:'A landing page of a Recycling app Empowering everyday Africans Using AI and gamified learning to transform how Africa recycles - starting with you.',
+        language:{
+            text1: 'html',
+            text2: 'css',
+            text3: 'React',
+        },
+        link:'https://portfolio-blond-theta-44.vercel.app/'
+    },
+    
     
 ]
  
