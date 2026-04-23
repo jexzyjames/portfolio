@@ -78,7 +78,7 @@ const mywork_data = [
             text2: 'css',
             text3: 'React',
         },
-        link:'https://portfolio-blond-theta-44.vercel.app/'
+        link:'https://wastegrid.vercel.app/'
     },
     
     
