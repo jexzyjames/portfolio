@@ -39,6 +39,8 @@ const Contact = ({theme}) => {
           console.log("FAILED...", error.text);
           var time = setTimeout(() => {
             setMessage("Failed to send Message");
+            setLoading(false);
+
           }, 2000);
 
           return () => {
@@ -65,7 +67,7 @@ const Contact = ({theme}) => {
         whileFocus={{ opacity: 1, translateY: 0, transition: { delay: 0.1 } }}
         className="contact-title"
       >
-        <h1 className={`${theme === 'light' ? 'light' : null}`}> Get in touch</h1>
+        <h1 className={` touch${theme === 'light' ? 'light' : null}`}> Get in touch</h1>
         <img src={themes} alt="" />
       </motion.div>
       <div className="contact-section">
@@ -78,7 +80,7 @@ const Contact = ({theme}) => {
           }}
           className="contact-left"
         >
-          <h1>Let's talk</h1>
+          <h1 className="h1">Let's talk</h1>
           <motion.p
           className={ `contact-text ${theme} === 'light' ? 'light' : 'dark' `}
             initial={{ opacity: 0, translateY: -100 }}

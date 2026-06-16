@@ -4,10 +4,24 @@ import tracker from '../assets/tracker.png'
 import edu from '../assets/edu.png'
 import waste from '../assets/Waste.jpg'
 import ecommerce from '../assets/ecommerce.png'
+import gemii from '../assets/gemi.PNG'
 // import tracker from '../assets/tracker.png'
 const mywork_data = [
     {
         w_no:1,
+        w_name:"Web design",
+        w_img:gemii,
+        text:'Gemini clone  where you can 1. Sign Up and Login 2, View Saved Prompts. ',
+        language:{
+            text1: 'html',
+            text2: 'css',
+            text3: 'React Js',
+            text4: 'Material UI',
+        },
+        link:'https://gemini-clone-gamma-one.vercel.app/'
+    },
+     {
+        w_no:2,
         w_name:"Web design",
         w_img:edu,
         text:'The Landing page of an institution where you can see videos of the university, programs offered and feedbacks from  the students that attended. ',
@@ -19,8 +33,20 @@ const mywork_data = [
         },
         link:'https://educate-xi.vercel.app/'
     },
+        {
+        w_no:7,
+        w_name:"Web design",
+        w_img:waste,
+        text:'A landing page of a Recycling app Empowering everyday Africans Using AI and gamified learning to transform how Africa recycles - starting with you.',
+        language:{
+            text1: 'html',
+            text2: 'css',
+            text3: 'React',
+        },
+        link:'https://wastegrid.vercel.app/'
+    },
     {
-        w_no:2,
+        w_no:3,
         w_name:"Web design",
         w_img:tracker,
         text:'A little overview that also helps you track the current time and date ',
@@ -32,7 +58,7 @@ const mywork_data = [
         link:'https://zuri-task-nine.vercel.app/'
     },
     {
-        w_no:3,
+        w_no:4,
         w_name:"Web design",
         w_img:unilag,
         text:'The Landing Page of the  University of Lagos Student Portal  replicated',
@@ -45,7 +71,7 @@ const mywork_data = [
 
     },
     {
-        w_no:4,
+        w_no:5,
         w_name:"Web design",
         w_img:ratings,
         text:'A rating component that gives feedbacks on how a company service is being measured on rendered.',
@@ -57,7 +83,7 @@ const mywork_data = [
         link:'https://interactive-rating-component-psi-three.vercel.app/'
     },
     {
-        w_no:5,
+        w_no:6,
         w_name:"Web design",
         w_img:ecommerce,
         text:'An E-commerce responsive and with functionalities like 1. Add to Cart 2. Check out',
@@ -69,7 +95,7 @@ const mywork_data = [
         link:'https://ecommerce-phi-one-77.vercel.app/'
     },
         {
-        w_no:6,
+        w_no:7,
         w_name:"Web design",
         w_img:waste,
         text:'A landing page of a Recycling app Empowering everyday Africans Using AI and gamified learning to transform how Africa recycles - starting with you.',

@@ -75,6 +75,9 @@ html{
     cursor: pointer;
     transition: 0.3s;
 }
+.logos p {
+    font-size: 16px;
+}
 .footer-subscribe:hover{
     transform: scale(1.1);
     transition: 0.3s;
@@ -163,6 +166,9 @@ html{
     .footer-top{
         flex-direction: column;
     }
+    .logos p {
+    font-size: 16px;
+}
     .footer-top p{
         max-width: 100%;
     }

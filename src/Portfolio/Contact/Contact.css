@@ -7,9 +7,16 @@
   flex-direction: column;
   color: #fff;
   position: relative;
+  font-size:small;
   overflow: hidden;
   font-family: monospace !important;
   justify-content: center;
+}
+.touch{
+  font-size: 10px;
+}
+.h1{
+  font-size: 13px;
 }
 .contact-title {
   position: relative;

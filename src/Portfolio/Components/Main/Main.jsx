@@ -137,7 +137,7 @@ const Main = ({theme}) => {
                 Connect with me <FaLinkedin />{" "}
               </button>
             </a>
-            <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/12GkU9lzt7emdbDH-_ulC4HSGAp-zMQLp/view?usp=sharing">
+            <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1g0xa3Q-rFF846CNaFAYkd0ov7E2O9K75L/view?usp=sharing">
               <button className="resume-btn">My resume</button>
             </a>
           </div>

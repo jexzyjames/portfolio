@@ -4,7 +4,7 @@ import img from "../../assets/jj.jpg";
 import themes from "../../assets/theme_pattern.svg";
 import { motion } from "framer-motion";
 import {  FaReact,FaPaw } from "react-icons/fa";
-import { SiRedux, SiHtml5, SiCss3,SiJavascript, SiTailwindcss, SiMui  } from "react-icons/si";
+import { SiRedux, SiHtml5,SiJavascript, SiTailwindcss, SiMui  } from "react-icons/si";
 const About = () => {
   const[activeTab, seetActiveTab] = useState('about')
   return (
@@ -90,7 +90,7 @@ const About = () => {
             transition: { delay: 0.1 },
           }}
         >
-          <h2>1</h2>
+          <h2>4</h2>
           <h5>INTERNSHIP EXPERIENCE</h5>
         </motion.div>
         </div>
@@ -129,7 +129,7 @@ const About = () => {
                 <p> <SiHtml5 className="html"/> HTML  </p> <hr style={{ width: "70%" }} />{" "}
               </div>
               <div className="labelled">
-                <p><SiCss3 className="css"/> CSS </p> <hr style={{ width: "70%" }} />{" "}
+                <p><SiHtml5 className="css"/> CSS </p> <hr style={{ width: "70%" }} />{" "}
               </div>
               <div className="labelled">
                 <p> <FaReact className='react' /> React JS </p> <hr style={{ width: "70%" }} />{" "}
