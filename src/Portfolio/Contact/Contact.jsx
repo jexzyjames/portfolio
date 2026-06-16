@@ -30,7 +30,7 @@ const Contact = ({theme}) => {
           }, 2000);
 
           return () => {
-            setLoading(false);
+            // setLoading(false);
             clearTimeout(time, 1000);
           };
         },
@@ -58,7 +58,7 @@ const Contact = ({theme}) => {
       clearTimeout(time, 1000);
     };
   },
-   [time, message]);
+   [message]);
   return (
     <div className="contact">
       <motion.div
@@ -67,9 +67,9 @@ const Contact = ({theme}) => {
         whileFocus={{ opacity: 1, translateY: 0, transition: { delay: 0.1 } }}
         className="contact-title"
       >
-        <h1 className={` touch${theme === 'light' ? 'light' : null}`}> Get in touch</h1>
-        <img src={themes} alt="" />
+        {/* <img src={themes} alt="" /> */}
       </motion.div>
+        <h1 className={` ${theme === 'light' ? 'light' : ''}`}> Get in touch</h1>
       <div className="contact-section">
         <motion.div
           initial={{ opacity: 0, translateY: -100 }}

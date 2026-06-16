@@ -1,29 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 .contact {
-  margin: 100px 170px;
+  margin: 80px 170px;
   align-items: center;
   display: flex;
-  gap: 70px;
+  gap: 50px;
   flex-direction: column;
   color: #fff;
   position: relative;
-  font-size:small;
+  /* font-size:small !important; */
   overflow: hidden;
   font-family: monospace !important;
   justify-content: center;
 }
+.contact h1{
+  font-size: 50px;
+}
 .touch{
-  font-size: 10px;
+  font-size: 40px;
 }
 .h1{
   font-size: 13px;
 }
 .contact-title {
   position: relative;
+  margin: 0;
 }
 .contact-title h1 {
-  padding: 0px 30px;
-  font-size: 80px;
+  padding: 0px 10px;
+  font-size: 50px;
   font-weight: 800;
   text-align: center;
   position: relative;
@@ -32,11 +36,12 @@
   position: absolute;
   z-index: -1;
   right: 0;
+  width: 30px;
   bottom: 0;
 }
 .contact-section {
   display: flex;
-  gap: 150px;
+  gap: 100px;
 }
 .contact-left,
 .contact-right {
@@ -73,7 +78,7 @@ text-rendering: optimizeLegibility;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 60px;
+  font-size: 30px;
   font-weight: 700;
 }
 .contact-right label,
@@ -212,6 +217,9 @@ text-rendering: optimizeLegibility;
   .contact-section {
     flex-direction: column;
     width: 100%;
+  }
+  .contact-title h1{
+    font-size: 50px;
   }
   .contact-right {
     width: 100%;
