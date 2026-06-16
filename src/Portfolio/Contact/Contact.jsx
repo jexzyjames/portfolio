@@ -31,7 +31,7 @@ const Contact = ({theme}) => {
       },
       (error) => {
         console.log("FAILED...", error.text);
-        setMessage(error.text || "Failed to send email");
+        setMessage( error.text || "Failed to send email");
         setLoading(false);
       }
     );
@@ -108,12 +108,7 @@ useEffect(() => {
         <div className="contact-right">
           <form
             ref={form}
-            onSubmit={(e)=>{
-
-              e.preventDefault();
-              sendEmail(e)
-
-            }}
+            onSubmit={()=> sendEmail()}
             sx={{
               margin: "20px 0",
               padding: "1rem",
@@ -195,10 +190,10 @@ useEffect(() => {
                 Submit Now
               </Button>
             )}
-            <p className="message">{message}</p>
             <br />
           
           </form>
+            <p className="message">{message}</p>
         </div>
       </div>
     </div>
