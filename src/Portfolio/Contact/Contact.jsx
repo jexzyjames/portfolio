@@ -14,51 +14,40 @@ const Contact = ({theme}) => {
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
  
-  const sendEmail = (e) => {
-     setLoading(true);
+ const sendEmail = (e) => {
+  e.preventDefault(); // Prevents page reload
+  setLoading(true);
 
-    emailjs
-      .sendForm("service_hmhmjdo", "template_uazi2if", form.current, {
-        publicKey: "itZqWuLC3b5kNaAE-",
-      })
-      .then(
-        () => {
-          console.log("SUCCESS!");
-          time = setTimeout(() => {
-            setMessage("Email sent succesfully");
-            setLoading(false);
-          }, 2000);
+  emailjs
+    .sendForm("service_hmhmjdo", "template_uazi2if", form.current, {
+      publicKey: "itZqWuLC3b5kNaAE-",
+    })
+    .then(
+      () => {
+        console.log("SUCCESS!");
+        setMessage("Email sent successfully");
+        setLoading(false);
+        e.target.reset(); // Resets form on success
+      },
+      (error) => {
+        console.log("FAILED...", error.text);
+        setMessage(error.text || "Failed to send email");
+        setLoading(false);
+      }
+    );
+};
 
-          return () => {
-            // setLoading(false);
-            clearTimeout(time, 1000);
-          };
-        },
+// This effect automatically clears the message 3 seconds after it appears
+useEffect(() => {
+  if (!message) return; // Do nothing if there is no message
 
-        (error) => {
-          console.log("FAILED...", error.text);
-          var time = setTimeout(() => {
-            setMessage("Failed to send Message");
-            setLoading(false);
+  const timer = setTimeout(() => {
+    setMessage(""); // Clears the message state
+  }, 3000);
 
-          }, 2000);
+  return () => clearTimeout(timer); // Clean up timer if component unmounts or message changes
+}, [message]);
 
-          return () => {
-            setLoading(false);
-            clearTimeout(time, 1000);
-          };
-        }
-      );
-    e.target.reset();
-  };
-  useEffect(() => {
-    // sendEmail()
-
-    return () => {
-      clearTimeout(time, 1000);
-    };
-  },
-   [message]);
   return (
     <div className="contact">
       <motion.div
