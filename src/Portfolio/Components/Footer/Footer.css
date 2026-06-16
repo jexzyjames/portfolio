@@ -22,14 +22,15 @@ html{
     /* justify-content: space-between; */
     display: grid;
     overflow:hidden;
-    width: 100%;
+    /* width: 100%;/ */
+    /* gap: 50px; */
     margin: 10px auto 30px;
     grid-template-columns: 1fr 1fr;
 }
 .footer-top p{
     text-align: left;
     font-size: 30px;
-    max-width: 400px;
+    /* max-width: 300px; */
 }
 .footer-top-right{
     display: flex;
@@ -40,7 +41,7 @@ html{
     overflow:hidden;
     align-items: center;
     /* background:yellow; */
-    /* gap: 25px; */
+    gap: 25px;
 }
 .footer-email-input{
     display: flex;
@@ -75,8 +76,13 @@ html{
     cursor: pointer;
     transition: 0.3s;
 }
+.logos{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 .logos p {
-    font-size: 16px;
+    font-size: 18px;
 }
 .footer-subscribe:hover{
     transform: scale(1.1);

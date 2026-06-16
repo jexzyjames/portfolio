@@ -138,7 +138,7 @@ useEffect(() => {
                 color: "#A0A0A0",
               }}
               fullWidth
-              type="phone"
+              type="number"
               placeholder="Enter your mobile"
               name="phone"
               // className={`${theme === 'light' ? 'light' : 'dark'}`}

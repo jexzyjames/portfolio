@@ -33,7 +33,6 @@ const Footer = () => {
        <div className="footer-top-left">
         <div className="logos">
             <h4>James</h4>
-            <img src={theme} alt="" />
             <p>I'm a frontend developer from Nigeria with 3+ years of experience vast with frontend core technologies.</p>
 
         </div>
