@@ -13,7 +13,7 @@ const Projects = ({theme}) => {
     className="works">
       <div className="works-title">
         <h1>My Services</h1>
-        <img src={themes} alt="" />
+        <img src={themes} alt="underlying image" />
       </div>
       <div className="works-container">
         {datas.map((item, id) => {
