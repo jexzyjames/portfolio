@@ -176,7 +176,7 @@ useEffect(() => {
               <Button
                 className="submit-btn"
                 type="submit"
-                onClick = { ()=> sendEmail() }
+        
                 sx={{
                   margin: "20px 0",
                   borderRadius: "50px",
