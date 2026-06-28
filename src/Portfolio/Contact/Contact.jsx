@@ -39,6 +39,7 @@ const Contact = ({theme}) => {
 
 // This effect automatically clears the message 3 seconds after it appears
 useEffect(() => {
+  sendEmail();
   if (!message) return; // Do nothing if there is no message
 
   const timer = setTimeout(() => {
@@ -175,6 +176,7 @@ useEffect(() => {
               <Button
                 className="submit-btn"
                 type="submit"
+                onClick = { (e)=> sendEmail(e) }
                 sx={{
                   margin: "20px 0",
                   borderRadius: "50px",
