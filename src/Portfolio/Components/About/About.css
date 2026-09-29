@@ -30,7 +30,7 @@
 .image-left {
     display: flex;
     flex-basis: 40%;
-    min-width:0;
+    width:100%
     align-items: center;
     justify-content: center;
     overflow: hidden;
