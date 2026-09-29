@@ -28,7 +28,7 @@
 
 .image-left{
     display: flex;
-    flex-basis: 30%;
+    flex-basis: 50%;
     align-items: center;
     justify-content: center;
     overflow: hidden;
@@ -39,11 +39,11 @@
     height: auto; 
     border-radius: 10px;
     border: 1px solid;
-    object-fit: cover;  
+    object-fit: contain;  
     max-width: 400px;  
 }
 .details-right{
-    flex-basis: 70%;
+    flex-basis: 50%;
     background: #333;
     /* padding:1rem; */
     box-shadow: rgba(0, 0, 0, 0.4) ;
