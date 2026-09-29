@@ -92,7 +92,7 @@ const mywork_data = [
             text2: 'Tailwind css',
             text3: 'Next',
         },
-        link:'https://forex-check-sooty.vercel.app/'
+     link:'https://tobams-omega.vercel.app/'
     },
     {
         w_no:8,  // ✅ Changed from 7 (was duplicate)
