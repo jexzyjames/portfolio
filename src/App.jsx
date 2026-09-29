@@ -12,6 +12,7 @@ import CircularScrollProgress from './Portfolio/Components/CirrcularScrollProgre
 const App = () => {
     const [theme, setTheme] = useState('dark')
   return (
+      
     <div style={{position:'relative'}} className={`${theme} === 'light' ? 'light' : 'dark'  `} >
         <ScrollProgress  />  
         <Main theme={theme}/>
