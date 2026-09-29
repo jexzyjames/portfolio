@@ -41,7 +41,7 @@ const About = () => {
           <div className="content">
             {activeTab === 'experience' && (
               <motion.div
-                initial={{ opacity: 0, translateY: -80 }}
+                initial={{ opacity: 0, translateY: -10 }}
                 whileInView={{ opacity: 1, translateY: 0 }}
                 transition={{ delay: 0.1, duration: 0.5 }}
                 viewport={{ once: true }}  
@@ -49,7 +49,7 @@ const About = () => {
               >
                 <div>
                   <motion.div
-                    initial={{ opacity: 0, translateY: -80 }}
+                    initial={{ opacity: 0, translateY: -10 }}
                     whileInView={{ opacity: 1, translateY: 0 }}
                     transition={{ delay: 0.2, duration: 0.5 }}
                     viewport={{ once: true }} 
@@ -62,7 +62,7 @@ const About = () => {
                   <hr />
                   
                   <motion.div
-                    initial={{ opacity: 0, translateY: -80 }}
+                    initial={{ opacity: 0, translateY: -10 }}
                     whileInView={{ opacity: 1, translateY: 0 }}
                     transition={{ delay: 0.3, duration: 0.5 }}
                     viewport={{ once: true }} 
@@ -76,7 +76,7 @@ const About = () => {
                   
                   <motion.div
                     className="years"
-                    initial={{ opacity: 0, translateY: -80 }}
+                    initial={{ opacity: 0, translateY: -10 }}
                     whileInView={{ opacity: 1, translateY: 0 }}
                     transition={{ delay: 0.4, duration: 0.5 }}
                     viewport={{ once: true }}
@@ -90,7 +90,7 @@ const About = () => {
 
             {activeTab === 'about' && (
               <motion.div
-                initial={{ opacity: 0, translateY: -80 }}
+                initial={{ opacity: 0, translateY: -10 }}
                 whileInView={{ opacity: 1, translateY: 0 }}
                 transition={{ delay: 0.2, duration: 0.5 }}
                 viewport={{ once: true }}
@@ -113,7 +113,7 @@ const About = () => {
 
             {activeTab === 'skills' && (
               <motion.div
-                initial={{ opacity: 0, translateY: -100 }}
+                initial={{ opacity: 0, translateY: -10 }}
                 whileInView={{ opacity: 1, translateY: 0 }}
                 transition={{ delay: 0.2, duration: 0.5 }}
                 viewport={{ once: true }}
