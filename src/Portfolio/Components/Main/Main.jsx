@@ -38,7 +38,6 @@ const Main = ({theme}) => {
             {" "}
             <Link offset={0} duration={500} to="main">
               <p onClick={() =>{
-
                 setIsOpen("home")
                 closeMenu();
               }
