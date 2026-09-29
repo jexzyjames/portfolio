@@ -14,81 +14,72 @@ const About = () => {
       </div>
 
       <div className="about-section">
-        <motion.div
-          className="image-left"
-          initial={{ opacity: 0, translateX: -100 }}
-          whileInView={{
-            opacity: 1,
-            translateX: 0,
-            transition: { delay: 0.1 },
-          }}
-          whileFocus={{ opacity: 1, translateX: 0, transition: { delay: 0.1} }}
-        >
-          <img src={img} alt="" />
-        </motion.div>
+       <motion.div
+    className="image-left"
+    initial={{ opacity: 0, translateX: -100 }}
+    whileInView={{ opacity: 1, translateX: 0 }}
+    transition={{ delay: 0.1, duration: 0.5 }}
+    viewport={{ once: true }}  
+>
+    <img src={img} alt="" />
+</motion.div>
 
-        <motion.div
-          className="details-right"
-          initial={{ opacity: 0, translateX: 100 }}
-          whileInView={{
-            opacity: 1,
-            translateX: 0,
-            transition: { delay: 0.1 },
-          }}
-          whileFocus={{ opacity: 1, translateX: 0, transition: { delay: 0.1 } }}
-        >
+<motion.div
+    className="details-right"
+    initial={{ opacity: 0, translateX: 100 }}
+    whileInView={{ opacity: 1, translateX: 0 }}
+    transition={{ delay: 0.2, duration: 0.5 }}
+    viewport={{ once: true }}  
+>
+    <div className="nav-tabs">
+        <div onClick={()=> seetActiveTab('about')} className={`tabs ${activeTab === 'about' ? 'active-tab' : '' }`}>About</div>
+        <div onClick={()=> seetActiveTab('skills')} className={`tabs ${activeTab === 'skills' ? 'active-tab' : '' }`}>Skills</div>
+        <div onClick={()=> seetActiveTab('experience')} className={`tabs ${activeTab === 'experience' ? 'active-tab' : '' }`}>Experience</div>
+    </div>
 
-          <div className="nav-tabs">
-            <div onClick={()=> seetActiveTab('about')} className={`tabs ${activeTab === 'about' ? 'active-tab' : '' }`}>About</div>
-            <div onClick={()=> seetActiveTab('skills')} className={`tabs ${activeTab === 'skills' ? 'active-tab' : '' }`}>Skills</div>
-            <div onClick={()=> seetActiveTab('experience')} className={`tabs ${activeTab === 'experience' ? 'active-tab' : '' }`}>Experience</div>
-          </div>
-
-          <div className="content">
-            {activeTab === 'experience' && (
-              <motion.div
-        initial={{ opacity: 0, translateY: -100 }}
-        animate={{ opacity: 1, translateY: 0, transition: { delay: 0.2} }}
-        className="tab experience"
-      >
-
-        <div >
-
-        <motion.div
-          initial={{ opacity: 0, translateY: -100 }}
-          animate={{
-            opacity: 1,
-            translateY: 0,
-            transition: { delay: 0.5 },
-          }}
-          className="years"
-        >
-          <h2>3+</h2>
-          <h5>YEARS OF EXPERIENCE</h5>
-        </motion.div>
-        <hr />
-        <motion.div
-          initial={{ opacity: 0, translateY: -100 }}
-          animate={{
-            opacity: 1,
-            translateY: 0,
-            transition: { delay: 0.1 },
-          }}
-          className="years"
-        >
-          <h2>10+</h2>
-          <h5>PROJECTS COMPLETED</h5>
-        </motion.div>
-        <hr />
-        <motion.div
-          className="years"
-          initial={{ opacity: 0, translateY: -100 }}
-          animate={{
-            opacity: 1,
-            translateY: 0,
-            transition: { delay: 0.1 },
-          }}
-        >
+    <div className="content">
+        {activeTab === 'experience' && (
+            <motion.div
+                initial={{ opacity: 0, translateY: -100 }}
+                whileInView={{ opacity: 1, translateY: 0 }}
+                transition={{ delay: 0.2, duration: 0.5 }}
+                viewport={{ once: true }}  
+                className="tab experience"
+            >
+                <div>
+                    <motion.div
+                        initial={{ opacity: 0, translateY: -100 }}
+                        whileInView={{ opacity: 1, translateY: 0 }}
+                        transition={{ delay: 0.3, duration: 0.5 }}
+                        viewport={{ once: true }} 
+                        className="years"
+                    >
+                        <h2>3+</h2>
+                        <h5>YEARS OF EXPERIENCE</h5>
+                    </motion.div>
+                    
+                    <hr />
+                    
+                    <motion.div
+                        initial={{ opacity: 0, translateY: -100 }}
+                        whileInView={{ opacity: 1, translateY: 0 }}
+                        transition={{ delay: 0.4, duration: 0.5 }}
+                        viewport={{ once: true }} 
+                        className="years"
+                    >
+                        <h2>10+</h2>
+                        <h5>PROJECTS COMPLETED</h5>
+                    </motion.div>
+                    
+                    <hr />
+                    
+                    <motion.div
+                        className="years"
+                        initial={{ opacity: 0, translateY: -100 }}
+                        whileInView={{ opacity: 1, translateY: 0 }}
+                        transition={{ delay: 0.5, duration: 0.5 }}
+                        viewport={{ once: true }}
+                    >
           <h2>4</h2>
           <h5>INTERNSHIP EXPERIENCE</h5>
         </motion.div>
