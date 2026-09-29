@@ -115,9 +115,8 @@
     display: block;
     padding: 1rem;
     max-width: 700px;
-    height: 350px;
     max-height: 400px;
-    width: 700px;
+    width: 600px;
     margin: 10px auto;
     transition: all 0.4s ease-in-out;
     animation : fadeIn 0.7s ease-in-out alternate-reverse ;
@@ -297,6 +296,10 @@
     .nav-tabs {
         font-size: 15px;
     }
+    .about-title h1{
+        font-size: 30px;
+    }
+        
 
 }
 @media(max-width: 375px){
@@ -305,5 +308,8 @@
         max-width: 300px;
         height: 100%;
         max-height: 300px;
+    }
+     .about-title h1{
+        font-size: 25px;
     }
 }
