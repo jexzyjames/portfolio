@@ -4,7 +4,6 @@ import menu from "../../assets/menu_open.svg";
 import close from "../../assets/menu_close.svg";
 import underline from "../../assets/nav_underline.svg";
 import "./Main.css";
-import themes from "../../assets/theme_pattern.svg";
 
 import { Link } from "react-scroll";
 import {
@@ -30,7 +29,6 @@ const Main = ({theme}) => {
       <div className="top">
         <div className="logos">
           <h4>James</h4>
-          <img src={themes} alt="" />
         </div>
 
         <FaAlignJustify className={` lighted ${theme} === 'light' ?  'light' : 'darks' `} onClick={openMenu} src={menu} alt="" />
