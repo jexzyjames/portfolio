@@ -10,7 +10,7 @@
 .about-section{
     display: flex;
     justify-content: space-between;
-    gap:50px;
+    gap:2rem;
    
 }
 .about-title{
@@ -27,31 +27,35 @@
     z-index: -1;
 }
 
-.image-left{
+.image-left {
     display: flex;
-    flex-basis: 50%;
+    flex: 1;
+    min-width: 0;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    width:100%;
 }
 
-.image-left img{
-    width: 100%; 
-    height: auto; 
+.image-left img {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    max-height: 500px;
+    object-fit: cover;
     border-radius: 10px;
-    border: 1px solid;
-    object-fit: cover;  
-    max-width: 600px;  
+    border: 1px solid #555;
 }
-.details-right{
-    flex-basis: 50%;
+
+.details-right {
+    flex: 1;
+    min-width: 0;
+    padding: 2rem;
     background: #333;
-    /* padding:1rem; */
-    box-shadow: rgba(0, 0, 0, 0.4) ;
     border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
 }
-
 .infos{
     display: flex;
     flex-direction: column;
