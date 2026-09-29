@@ -4,7 +4,6 @@ import {FaHtml5, FaJs } from "react-icons/fa";
 import {DiCss3} from 'react-icons/di'
 import { motion } from 'framer-motion'
 import './Works.css' 
-import themes from "../../assets/theme_pattern.svg";
 
 const Works = () => {
   return (
