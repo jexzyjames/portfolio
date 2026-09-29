@@ -1,7 +1,5 @@
 import React,{useEffect, useState} from 'react'
 import './Footer.css';
-import { Link } from "react-scroll";
-import {FaArrowUp} from 'react-icons/fa'
 import usericon from '../../assets/user_icon.svg'
 
 const Footer = () => {
