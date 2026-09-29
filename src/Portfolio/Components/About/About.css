@@ -10,11 +10,7 @@
 .about-section{
     display: flex;
     justify-content: space-between;
-    /* width: 100%; */
-    /* height: 100%; */
-    /* display: grid; */
-    /* grid-template-columns: 1fr 1fr; */
-    /* gap: 10px; */
+   
 }
 .about-title{
     position: relative;
@@ -33,8 +29,18 @@
 .image-left{
     display: flex;
     flex-basis: 30%;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
 
-    /* flex: 5; */
+.image-left img{
+    width: 100%; 
+    height: auto; 
+    border-radius: 10px;
+    border: 1px solid;
+    object-fit: cover;  
+    max-width: 400px;  
 }
 .details-right{
     flex-basis: 70%;
@@ -43,11 +49,7 @@
     box-shadow: rgba(0, 0, 0, 0.4) ;
     border-radius: 10px;
 }
-.image-left img{
-    width: 80%;
-    border-radius: 10px;
-    border: 1px solid;
-}
+
 .infos{
     display: flex;
     flex-direction: column;
@@ -234,18 +236,22 @@
 }
 @media (max-width:992px){
     .about-me{
-        /* padding:auto!important ; */
-        /* margin: auto !important; */
         padding:100px 3%;
         box-sizing: border-box;
     }
+    .image-left{
+        width: 100%; 
+        max-width: 500px; 
+        margin: 0 auto;  
+        overflow: hidden;
+    }
     .image-left img{
         width: 100%;
+        height: auto;  
         overflow: hidden;
         object-fit: cover;
-    }
-    .image-left{
-        overflow: hidden;
+        border-radius: 10px;
+        max-width: 100%;  
     }
     .about-section{
         display: grid;
@@ -260,6 +266,16 @@
     .experience{
         flex-direction: column;
         gap: 10px;
+    }
+    .image-left{
+        width: 100%;
+        max-width: 400px; 
+        margin: 0 auto;
+    }
+    .image-left img{
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
     }
     .content{
         width:400px;
