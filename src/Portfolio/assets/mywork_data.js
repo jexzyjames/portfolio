@@ -5,8 +5,7 @@ import edu from '../assets/edu.png'
 import rst from '../assets/rest.png'
 import forex from '../assets/forex.png'
 import gemii from '../assets/gemi.PNG'
-import waste from '../assets/Waste.jpg'  // ✅ Added missing import
-
+import waste from '../assets/Waste.jpg' 
 const mywork_data = [
     {
         w_no:1,
