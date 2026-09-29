@@ -97,6 +97,10 @@
 
         
     }
+    .works-title h1{
+    font-size: 30px;
+    padding: 0px 30px;
+}
     .format{
         width:100%;
     }
@@ -117,6 +121,10 @@
         padding: 0;
         
     }
+    .works-title h1{
+    font-size: 25px;
+    padding: 0px 30px;
+}
     .format{
         width:100%;
     }
