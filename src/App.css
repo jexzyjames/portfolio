@@ -76,7 +76,7 @@ input[type="number"]::-webkit-inner-spin-button {
     right:50px ;
     align-items: center;
     cursor: pointer !important;
-    font-size: 1rem;
+    font-size: 14px;
 }
 .sun, .moon{
     cursor: pointer !important;
@@ -115,7 +115,7 @@ input[type="number"]::-webkit-inner-spin-button {
         z-index: 120;
         align-items: center;
         cursor: pointer !important;
-        font-size: 1rem;
+        font-size: 14px;
     }
     
 }
