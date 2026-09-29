@@ -1,11 +1,10 @@
-import ratings from '../assets/ratings.png'
+rimport roqqu from '../assets/roqqu.png'
 import unilag from '../assets/unilagrepl.png'
-import tracker from '../assets/tracker.png'
+import tobams from '../assets/tobams.png'
 import edu from '../assets/edu.png'
-import waste from '../assets/Waste.jpg'
-import ecommerce from '../assets/ecommerce.png'
+import rst from '../assets/rest.png'
+import forex from '../assets/forex.png'
 import gemii from '../assets/gemi.PNG'
-// import tracker from '../assets/tracker.png'
 const mywork_data = [
     {
         w_no:1,
@@ -48,14 +47,14 @@ const mywork_data = [
     {
         w_no:3,
         w_name:"Web design",
-        w_img:tracker,
-        text:'A little overview that also helps you track the current time and date ',
+        w_img:forex,
+        text:'A responsive currency conversion web application using the Frankfurter API to retrieve exchange-rate data and provide currency conversions through a simple, user-friendly interface.',
         language:{
             text1: `html` ,
-            text2: 'css',
-            text3: 'javascript',
+            text2: 'Tailwind css',
+            text3: 'React',
         },
-        link:'https://zuri-task-nine.vercel.app/'
+        link:'https://forex-check-sooty.vercel.app/'
     },
     {
         w_no:4,
@@ -73,38 +72,38 @@ const mywork_data = [
     {
         w_no:5,
         w_name:"Web design",
-        w_img:ratings,
-        text:'A rating component that gives feedbacks on how a company service is being measured on rendered.',
-        language:{
-            text1: 'html',
-            text2: 'css',
-            text3: 'Javascript',
-        },
-        link:'https://interactive-rating-component-psi-three.vercel.app/'
-    },
-    {
-        w_no:6,
-        w_name:"Web design",
-        w_img:ecommerce,
-        text:'An E-commerce responsive and with functionalities like 1. Add to Cart 2. Check out',
-        language:{
-            text1: 'html',
-            text2: 'css',
-            text3: 'Javascript',
-        },
-        link:'https://ecommerce-phi-one-77.vercel.app/'
-    },
-        {
-        w_no:7,
-        w_name:"Web design",
-        w_img:waste,
-        text:'A landing page of a Recycling app Empowering everyday Africans Using AI and gamified learning to transform how Africa recycles - starting with you.',
+        w_img:roqqu,
+        text:'A cryptocurrency-focused web application clone inspired by Roqqu, with an emphasis on creating a modern user interface and a smooth digital financial experience.',
         language:{
             text1: 'html',
             text2: 'css',
             text3: 'React',
         },
-        link:'https://wastegrid.vercel.app/'
+        link:'https://roqqu-two.vercel.app/'
+    },
+    {
+        w_no:6,
+        w_name:"Web design",
+        w_img:forex,
+        text:'A pixel-perfect, responsive implementation of the provided Figma design of Tobams Group using Next.js and Tailwind CSS.',
+        language:{
+            text1: 'html',
+            text2: 'Tailwind css',
+            text3: 'Next',
+        },
+        link:'https://forex-check-sooty.vercel.app/'
+    },
+        {
+        w_no:7,
+        w_name:"Web design",
+        w_img:rst,
+        text:' A responsive country explorer application that allows users to browse countries and explore country-specific information through an interactive interface.',
+        language:{
+            text1: 'html',
+            text2: 'Tailwind css',
+            text3: 'React',
+        },
+        link:'https://rest-countries-livid.vercel.app/'
     },
     
     
