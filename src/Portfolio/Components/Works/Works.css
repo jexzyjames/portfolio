@@ -91,7 +91,7 @@
     box-sizing: border-box;
     cursor: pointer;
     width: 100%;
-    height: auto;  
+    height: 90%;  
     object-fit: contain;  
     border-radius: 20px;
     transition: 0.3s;
