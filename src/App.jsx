@@ -9,13 +9,11 @@ import { FaSun, FaMoon } from 'react-icons/fa';
 import './App.css'
 import ScrollProgress from './Portfolio/Components/ScrollProgress';
 import CircularScrollProgress from './Portfolio/Components/CirrcularScrollProgress';
-import JobBoard from './job/JobBoard';
 const App = () => {
     const [theme, setTheme] = useState('dark')
   return (
     <div style={{position:'relative'}} className={`${theme} === 'light' ? 'light' : 'dark'  `} >
         <ScrollProgress  />  
-        <CircularScrollProgress/>  
         <Main theme={theme}/>
       <div className='theme'>
                { theme === 'dark' &&  <FaSun  className="sun" onClick={()=> setTheme('light')}/>}
@@ -26,7 +24,6 @@ const App = () => {
             <Works theme={theme}/>
             <Contact theme ={theme}/>
             <Footer/>
-            {/* <JobBoard/> */}
             
     </div>
   )
