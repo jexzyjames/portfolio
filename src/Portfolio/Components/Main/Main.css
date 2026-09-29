@@ -15,11 +15,11 @@
 .top{
     display:flex;
     position:fixed;
-    width:80%;
-    top:0;
-    left:0;
+    width:88%;
+    top:0;  
     z-index:9999;
     margin: 20px auto;
+    border-radius:20px;
      box-shadow: 0 5px 6px -5px rgba(0, 0, 0, 0.3);
     justify-content: space-between;
     align-items: center;
