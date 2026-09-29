@@ -191,13 +191,7 @@ a{
     color:#333 !important ;
         background: transparent !important ;
      }
-.logos img{
-    width: 30px;
-    position: relative;
-    z-index: -1;
-    right: 0;
-    bottom: 0;
-}
+
 
 @media (max-width:992px){
      
