@@ -25,8 +25,14 @@ const Works = () => {
             viewport={{ once: true }}  
             key={id}  
         >
+          <div>
+          
+        
             <img src={item.w_img} alt="works_image" /> 
-            
+            <a target='_blank' rel='noopener noreferrer' className='target' href={item.link}>
+                    <button className='target-link'>Check out</button>
+                </a>
+              </div>
             <motion.div
                 className="deeds"
                 initial={{ opacity: 0, translateX: 100 }}
@@ -53,9 +59,7 @@ const Works = () => {
                     </ul>
                 </motion.div>
                 
-                <a target='_blank' rel='noopener noreferrer' className='target' href={item.link}>
-                    <button className='target-link'>Check out</button>
-                </a>
+              
             </motion.div>
         </motion.div>
     )
