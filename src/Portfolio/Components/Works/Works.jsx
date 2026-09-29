@@ -14,7 +14,7 @@ const Works = () => {
          whileInView={{ opacity: 1, translateY: 0, transition:{delay: 0.1} }}
          className="services-title">
             <h1>My latest work</h1>
-            <img src={themes}alt="" />
+          
         </motion.div>
             {data.map((item,id) =>{
                 return(
