@@ -2,18 +2,12 @@ import React,{useEffect, useState} from 'react'
 import './Footer.css';
 import { Link } from "react-scroll";
 import {FaArrowUp} from 'react-icons/fa'
-import theme from '../../assets/theme_pattern.svg'
 import usericon from '../../assets/user_icon.svg'
 
 const Footer = () => {
    const[stick, setStick] = useState(false)
    const copyright = new Date()
    const year = copyright.getUTCFullYear()
-  // useEffect(()=>{
-  //   if(window.scrollY > 100){
-  //     alert('hi')
-  //   }
-  // },[]);
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
