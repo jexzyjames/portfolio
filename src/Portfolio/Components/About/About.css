@@ -33,6 +33,7 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    width:100%;
 }
 
 .image-left img{
@@ -40,7 +41,7 @@
     height: auto; 
     border-radius: 10px;
     border: 1px solid;
-    object-fit: contain;  
+    object-fit: cover;  
     max-width: 600px;  
 }
 .details-right{
