@@ -10,6 +10,7 @@
 .about-section{
     display: flex;
     justify-content: space-between;
+    gap:50px;
    
 }
 .about-title{
@@ -40,7 +41,7 @@
     border-radius: 10px;
     border: 1px solid;
     object-fit: contain;  
-    max-width: 400px;  
+    max-width: 600px;  
 }
 .details-right{
     flex-basis: 50%;
