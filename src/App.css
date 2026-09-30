@@ -77,9 +77,10 @@ input[type="number"]::-webkit-inner-spin-button {
     position: fixed;
     right: 0.7%;
     cursor: pointer !important;
-    top: 2%;
+    top: 3.2%;
     background: linear-gradient(267deg,#da7c25 .36%,#b923e1 102.06%);
     padding: 1rem;
+    z-index:1220:
     border-radius: 100%;
 }
 .sun, .moon{
@@ -87,14 +88,14 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 @media screen and (max-width:1200px){
     .theme{
-        top:2%;
+        top:3.5%;
         right:0.5%;
         /* margin-left: 20px; */
     }
 }
 @media screen and (max-width:992px){
     .theme{
-        top:2%;
+        top:3%;
     }
 }
 @media screen and (max-width: 991px){
@@ -116,7 +117,7 @@ input[type="number"]::-webkit-inner-spin-button {
         position: fixed;
         top: 3%;
         right:2% ;
-        z-index: 120;
+        z-index: 1220;
         align-items: center;
         cursor: pointer !important;
         font-size: 14px;
