@@ -255,7 +255,7 @@ a{
     .lighted{
         position: fixed;
         display: block;
-        z-index: 122;
+        z-index: 1222;
         top:3.7%;
         right: 70px;
         cursor: pointer !important;
