@@ -6,7 +6,7 @@ import Contact from './Portfolio/Contact/Contact';
 import Works from './Portfolio/Components/Works/Works';
 import Footer from './Portfolio/Components/Footer/Footer';
 import { FaSun, FaMoon } from 'react-icons/fa';
-import './App.css'
+import './App.css' 
 import ScrollProgress from './Portfolio/Components/ScrollProgress';
 const App = () => {
     const [theme, setTheme] = useState('dark')
