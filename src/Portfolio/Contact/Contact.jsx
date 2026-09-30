@@ -136,7 +136,7 @@ const Contact = ({ theme }) => {
             <label htmlFor="phone">Phone Number</label>
             <TextField
               sx={{
-                margin: "20px 0",
+                margin: "205px 0",
                 background: "#32323c",
                 color: "#A0A0A0",
               }}
