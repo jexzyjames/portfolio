@@ -199,6 +199,14 @@ a{
     .logos{
         position: relative;
     }
+    .top{
+        position:  relative;
+         width:90%;
+    margin: 20px auto;
+    justify-content: space-between;
+    align-items: center;
+
+    }
     .logos img{
         position: relative;
         top: -20px;
@@ -324,6 +332,14 @@ a{
     color:#333 !important ;
         background: transparent !important ;
      }
+    .top{
+        position:  relative;
+         width:90%;
+    margin: 20px auto;
+    justify-content: space-between;
+    align-items: center;
+
+    }
      .wrapper{
         padding: 10px 0;
         margin:auto;
@@ -348,6 +364,14 @@ a{
     .wrapper-content h1{
         font-size: 20px;
      }
+    .top{
+        position:  relative;
+         width:90%;
+    margin: 20px auto;
+    justify-content: space-between;
+    align-items: center;
+
+    }
      .dp{
         width: 300px !important;
         height:300px;
