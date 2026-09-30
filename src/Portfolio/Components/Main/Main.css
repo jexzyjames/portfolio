@@ -25,7 +25,15 @@
     justify-content: space-between;
     align-items: center;
 }
-
+hr{
+    border: none;
+    width: 25px;
+    height: 3px;
+    background: #ff6600;
+    border-radius: 5px;
+    margin: 5px 0 0;
+}
+    
 .dp{
     width: 400px !important;
     height: 400px;
@@ -205,8 +213,9 @@ a{
     margin: 20px auto;
     justify-content: space-between;
     align-items: center;
-
+    box-shadow:none;
     }
+    
     .logos img{
         position: relative;
         top: -20px;
@@ -247,10 +256,10 @@ a{
         position: fixed;
         display: block;
         z-index: 122;
-        top:2%;
-        right: 60px;
+        top:3.7%;
+        right: 70px;
         cursor: pointer !important;
-        width: 30px;
+        font-size: 25px;
         margin:auto;
     overflow: hidden;
 
@@ -364,6 +373,9 @@ a{
     .wrapper-content h1{
         font-size: 20px;
      }
+    .lighted{
+        right:63px;
+    }
     .top{
         position:  relative;
          width:90%;
