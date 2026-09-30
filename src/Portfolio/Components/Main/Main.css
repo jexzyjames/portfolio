@@ -247,8 +247,8 @@ a{
         position: fixed;
         display: block;
         z-index: 122;
-        top:38px;
-        right: 15px;
+        top:2%;
+        right: 60px;
         cursor: pointer !important;
         width: 30px;
         margin:auto;
