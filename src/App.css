@@ -75,7 +75,8 @@ input[type="number"]::-webkit-inner-spin-button {
     font-size: 14px;
     justify-content: flex-end;
     position: fixed;
-    right: 1%;
+    right: 0.7%;
+    cursor: pointer !important;
     top: 50px;
     background: linear-gradient(267deg,#da7c25 .36%,#b923e1 102.06%);
     padding: 1rem;
@@ -86,8 +87,8 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 @media screen and (max-width:1200px){
     .theme{
-        top:50px;
-        right:1%;
+        top:60px;
+        right:0.5%;
         /* margin-left: 20px; */
     }
 }
