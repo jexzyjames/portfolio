@@ -41,7 +41,7 @@ const Main = ({theme}) => {
                 closeMenu();
               }
                  }>Home</p>
-              {isOpen === "home" ? <hr/> : ""}
+              {isOpen === "home" ? <span className='hr'></span>  : ""}
             </Link>
           </li>
           <li>
@@ -53,7 +53,7 @@ const Main = ({theme}) => {
                 closeMenu();
               }
                 }>About me</p>
-              {isOpen === "about-me" ? <hr/> : ""}
+              {isOpen === "about-me" ? <span className='hr'></span> : ""}
             </Link>
           </li>
           <li>
@@ -67,7 +67,7 @@ const Main = ({theme}) => {
               }
 
               }>Services</p>
-              {isOpen === "works" ?  <hr/> : ""}
+              {isOpen === "works" ?  <span className='hr'></span>  : ""}
             </Link>
           </li>
           <li>
@@ -79,7 +79,7 @@ const Main = ({theme}) => {
                 closeMenu();
               }
                  }>My works</p>
-              {isOpen === "services" ?  <hr/>: ""}
+              {isOpen === "services" ?  <span className='hr'></span> : ""}
             </Link>
           </li>
           <li>
@@ -91,7 +91,7 @@ const Main = ({theme}) => {
                 closeMenu();
               }
                 }>Contact</p>
-              {isOpen === "contact" ?  <hr/> : ""}
+              {isOpen === "contact" ? <span className='hr'></span> : ""}
             </Link>
           </li>
         </ul>
