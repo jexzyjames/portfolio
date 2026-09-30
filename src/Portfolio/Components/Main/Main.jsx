@@ -2,7 +2,6 @@ import React, { useState, useRef} from "react";
 import img from "../../assets/cover.jpg";
 import menu from "../../assets/menu_open.svg";
 import close from "../../assets/menu_close.svg";
-import underline from "../../assets/nav_underline.svg";
 import "./Main.css";
 
 import { Link } from "react-scroll";
@@ -42,7 +41,7 @@ const Main = ({theme}) => {
                 closeMenu();
               }
                  }>Home</p>
-              {isOpen === "home" ? <img  src={underline} alt="" /> : ""}
+              {isOpen === "home" ? <hr/> : ""}
             </Link>
           </li>
           <li>
@@ -54,7 +53,7 @@ const Main = ({theme}) => {
                 closeMenu();
               }
                 }>About me</p>
-              {isOpen === "about-me" ? <img src={underline} alt="" /> : ""}
+              {isOpen === "about-me" ? <hr/> : ""}
             </Link>
           </li>
           <li>
@@ -68,7 +67,7 @@ const Main = ({theme}) => {
               }
 
               }>Services</p>
-              {isOpen === "works" ? <img src={underline} alt="" /> : ""}
+              {isOpen === "works" ?  <hr/> : ""}
             </Link>
           </li>
           <li>
@@ -80,7 +79,7 @@ const Main = ({theme}) => {
                 closeMenu();
               }
                  }>My works</p>
-              {isOpen === "services" ? <img src={underline} alt="" /> : ""}
+              {isOpen === "services" ?  <hr/>: ""}
             </Link>
           </li>
           <li>
@@ -92,7 +91,7 @@ const Main = ({theme}) => {
                 closeMenu();
               }
                 }>Contact</p>
-              {isOpen === "contact" ? <img src={underline} alt="" /> : ""}
+              {isOpen === "contact" ?  <hr/> : ""}
             </Link>
           </li>
         </ul>
