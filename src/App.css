@@ -77,27 +77,38 @@ input[type="number"]::-webkit-inner-spin-button {
     position: fixed;
     right: 0.7%;
     cursor: pointer !important;
-    top: 3.2%;
+    top: 2.4%;
     background: linear-gradient(267deg,#da7c25 .36%,#b923e1 102.06%);
     padding: 1rem;
-    z-index:1220:
+    z-index:1220;
     border-radius: 100%;
 }
 .sun, .moon{
     cursor: pointer !important;
 }
+@media screen and (max-width:1440px){
+    .theme{
+        top:5% !important;
+        right:0.5%;
+        /* margin-left: 20px; */
+    }
+}
 @media screen and (max-width:1200px){
     .theme{
-        top:3.5%;
+        top:5% !important;
         right:0.5%;
         /* margin-left: 20px; */
     }
 }
 @media screen and (max-width:992px){
     .theme{
-        top:3%;
+        top:3% !important;
+    }
+    html{
+        overflow-x: hidden;
     }
 }
+
 @media screen and (max-width: 991px){
     .ul.light{
         font-size: 0.8rem;
@@ -111,16 +122,25 @@ input[type="number"]::-webkit-inner-spin-button {
     .sun, .moon{
         cursor: pointer !important;
     }
+    body{
+        overflow-x: hidden !important;
+    }
     .theme {
-        display: flex;
-        justify-content: flex-end;
-        position: fixed;
-        top: 3%;
-        right:2% ;
-        z-index: 1220;
-        align-items: center;
-        cursor: pointer !important;
-        font-size: 14px;
+      align-items: center;
+    display: flex;
+    font-size: 14px;
+    justify-content: flex-end;
+    position: fixed;
+    right: 2%;
+    cursor: pointer !important;
+    top: 7% !important;
+    background: linear-gradient(267deg,#da7c25 .36%,#b923e1 102.06%);
+    padding: 1rem;
+    z-index:122;
+      /* user-select: none; */
+        /* outline: none; */
+     /* -webkit-tap-highlight-color: transparent; */
+    border-radius: 100%;
     }
     
 }

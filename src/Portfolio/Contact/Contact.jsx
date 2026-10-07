@@ -56,7 +56,7 @@ const Contact = ({ theme }) => {
       >
       </motion.div>
 
-      <h1 className={`${theme === 'light' ? 'light' : ''}`}>Get in touch</h1>
+      <h1 className={`${theme === 'light' ? 'light' : ''}get`}>Get in touch</h1>
 
       <div className="contact-section">
         <motion.div

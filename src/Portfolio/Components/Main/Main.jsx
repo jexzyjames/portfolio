@@ -31,7 +31,7 @@ const Main = ({theme}) => {
         </div>
 
         <FaAlignJustify className={` lighted ${theme} === 'light' ?  'light' : 'darks' `} onClick={openMenu} src={menu} alt="" />
-        <ul ref={menuRef} className={`ul ${theme === 'light' ? 'darks' : 'lights'}`}>
+        <ul onClick={closeMenu} ref={menuRef} className={`ul ${theme === 'light' ? 'darks' : 'lights'}`}>
           <img className="remove" onClick={closeMenu} src={close} alt="" />
           <li>
             {" "}

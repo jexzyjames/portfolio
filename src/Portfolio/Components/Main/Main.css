@@ -255,8 +255,8 @@ a{
     .lighted{
         position: fixed;
         display: block;
-        z-index: 1222;
-        top:3.7%;
+        z-index: 122;
+        top:4.3%;
         right: 70px;
         cursor: pointer !important;
         font-size: 25px;
@@ -272,7 +272,7 @@ a{
      .remove{
         display: block;
         width: 20px;
-        top:10px;
+        top:18px;
         cursor: pointer;
         background-color: #DA7C25;
         border-radius: 50%;
@@ -280,16 +280,17 @@ a{
         /* margin-bottom: 10px; */
         box-shadow: 0 0 10 rgba(98, 95, 105, 0.402);
         right: 10px;
-        position: absolute;
+        position: static;
+        overflow: hidden;
 
      }
 .ul{
     position: fixed;
     bottom: 0;
-    margin:  0;
-    right: -180px;
+    padding-top:  40px;
+    right: -200px;
     width: 180px;
-    top:10px;
+    top:0px;
     z-index: 122;
     height:100%;
     display: block;
@@ -342,8 +343,9 @@ a{
         background: transparent !important ;
      }
     .top{
-        position:  relative;
+        position:  fixed;
          width:90%;
+         z-index: 1111;
     margin: 20px auto;
     justify-content: space-between;
     align-items: center;
@@ -365,6 +367,10 @@ a{
         width: 100%;
 
      }
+     .lighted{
+        right: 72px;
+        top: 9%;
+     }
 }
 @media (max-width:500px){
     .links {
@@ -375,9 +381,12 @@ a{
      }
     .lighted{
         right:63px;
+        top:10% !important   ;
+        cursor: pointer !important;
     }
     .top{
-        position:  relative;
+        position:  fixed;
+        overflow: hidden;
          width:90%;
     margin: 20px auto;
     justify-content: space-between;
