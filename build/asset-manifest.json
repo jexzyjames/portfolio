@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5b1c7546.css",
+    "main.js": "/static/js/main.ecccedd6.js",
+    "static/media/edu.png": "/static/media/edu.41472f3b6f86965a9158.png",
+    "static/media/tobams.png": "/static/media/tobams.feaa561f92fa0bd9f642.png",
+    "static/media/roqqu.png": "/static/media/roqqu.b892e382033db66ae90d.png",
+    "static/media/rest.png": "/static/media/rest.968db87e8ad90c113800.png",
+    "static/media/Waste.jpg": "/static/media/Waste.e5d5de68da95b634bab2.jpg",
+    "static/media/forex.png": "/static/media/forex.af1e30fd9b432d556f1c.png",
+    "static/media/unilagrepl.png": "/static/media/unilagrepl.b55e93552063898e748e.png",
+    "static/media/gemi.PNG": "/static/media/gemi.4cf5d3c063a0a29f004c.PNG",
+    "static/media/cover.jpg": "/static/media/cover.5baab7e4f18318553502.jpg",
+    "static/media/jj.jpg": "/static/media/jj.662551215bc08fad615d.jpg",
+    "static/media/user_icon.svg": "/static/media/user_icon.ace2e8ee2edf77ae00efb8133c51a22e.svg",
+    "index.html": "/index.html",
+    "static/media/menu_close.svg": "/static/media/menu_close.d177a733d1fa594adde48c1575c6a5b2.svg",
+    "main.5b1c7546.css.map": "/static/css/main.5b1c7546.css.map",
+    "main.ecccedd6.js.map": "/static/js/main.ecccedd6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5b1c7546.css",
+    "static/js/main.ecccedd6.js"
+  ]
+}

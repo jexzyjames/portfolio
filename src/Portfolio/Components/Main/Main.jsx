@@ -1,6 +1,5 @@
 import React, { useState, useRef} from "react";
 import img from "../../assets/cover.jpg";
-import menu from "../../assets/menu_open.svg";
 import close from "../../assets/menu_close.svg";
 import "./Main.css";
 
@@ -30,7 +29,10 @@ const Main = ({theme}) => {
           <h4>James</h4>
         </div>
 
-        <FaAlignJustify className={` lighted ${theme} === 'light' ?  'light' : 'darks' `} onClick={openMenu} src={menu} alt="" />
+        <FaAlignJustify
+          className={`lighted ${theme === 'light' ? 'darks' : ''}`}
+          onClick={openMenu}
+        />
         <ul onClick={closeMenu} ref={menuRef} className={`ul ${theme === 'light' ? 'darks' : 'lights'}`}>
           <img className="remove" onClick={closeMenu} src={close} alt="" />
           <li>

@@ -1,146 +1,137 @@
-
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&display=swap') */
-
-body{
-    color: #fff;
-    background: #161513;
-    font-family:'Open Sans', sans-serif;
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0 !important;
-
+html {
+  scroll-behavior: smooth;
 }
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
+
+body {
   margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background: #161513;
+  color: #fff;
+  font-family: "Open Sans", Arial, sans-serif;
 }
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+::selection {
+  color: #fff;
+  background: #8b35c9;
+}
+
+.app-shell {
+  min-height: 100vh;
+  overflow-x: clip;
+  transition: background-color 0.35s ease, color 0.35s ease;
+}
+
+.app-shell.light {
+  color: #28232d;
+  background: #fff;
+}
+
+.app-shell.dark {
+  color: #fff;
+  background: #161513;
+}
+
 .scroll-progress-bar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 5px;
-    background: #3b82f6; /* Blue color */
-    width: 0%;
-    transition: width 0.2s ease-out;
-    z-index: 9999;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #da7c25, #b923e1);
+  transition: width 0.2s ease-out;
+}
+
+.mail.light {
+  color: #161513;
+}
+
+.ul.lights {
+  color: #fff;
+}
+
+.ul.darks {
+  color: #28232d;
+}
+
+.lighted {
+  display: none;
+}
+
+.theme-toggle {
+  position: fixed;
+  z-index: 1220;
+  top: 1.25rem;
+  right: 1.25rem;
+  display: grid;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  place-items: center;
+  border: 0;
+  border-radius: 50%;
+  background: linear-gradient(267deg, #da7c25 0.36%, #b923e1 102.06%);
+  box-shadow: 0 8px 24px rgb(0 0 0 / 20%);
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.theme-toggle:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgb(0 0 0 / 28%);
+}
+
+.theme-toggle:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 3px;
+}
+
+.theme-toggle svg {
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 991px) {
+  html {
+    overflow-x: hidden;
   }
-  
-.light{
-    color: #333;
-    background: #ffffff;
-    animation: fadedIn alternate 0.5s ease-in-out;
-    margin: 0 !important;
-    padding: 0 !important;
 
-    transition: all 0.5s;
-}
-.dark{
-    background-color: #161513;
-    color:#fff !important; 
-    animation: fadedIn alternate 0.5s ease-in-out;
-    transition: all 0.5s;
-}
-@keyframes fadedIn {
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
+  .ul.lights,
+  .ul.darks {
+    color: #fff;
+  }
+
+  .theme-toggle {
+    top: 1rem;
+    right: 1rem;
+    width: 44px;
+    height: 44px;
+  }
 }
 
-.mail.light{
-    color:#161513 ;
-}
-.contact-left ul li.dark{
-    color:red !important;
-    opacity: 0;
-    background: red !important;
-}
-.ul.lights{
-    color: white ;
-}
-.ul.darks{
-    color: black ;
-    background-color: inherrit !important;
-}
-.lighted{
-    display: none;
-}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 
-    .theme {
-    align-items: center;
-    display: flex;
-    font-size: 14px;
-    justify-content: flex-end;
-    position: fixed;
-    right: 0.7%;
-    cursor: pointer !important;
-    top: 2.4%;
-    background: linear-gradient(267deg,#da7c25 .36%,#b923e1 102.06%);
-    padding: 1rem;
-    z-index:1220;
-    border-radius: 100%;
-}
-.sun, .moon{
-    cursor: pointer !important;
-}
-@media screen and (max-width:1440px){
-    .theme{
-        top:5% !important;
-        right:0.5%;
-        /* margin-left: 20px; */
-    }
-}
-@media screen and (max-width:1200px){
-    .theme{
-        top:5% !important;
-        right:0.5%;
-        /* margin-left: 20px; */
-    }
-}
-@media screen and (max-width:992px){
-    .theme{
-        top:3% !important;
-    }
-    html{
-        overflow-x: hidden;
-    }
-}
-
-@media screen and (max-width: 991px){
-    .ul.light{
-        font-size: 0.8rem;
-        color: #fff !important;
-        background-color: #777 !important;
-    }
-    .ul.darks{
-        font-size: 0.8rem;
-        color: #fff !important;
-    }
-    .sun, .moon{
-        cursor: pointer !important;
-    }
-    body{
-        overflow-x: hidden !important;
-    }
-    .theme {
-      align-items: center;
-    display: flex;
-    font-size: 14px;
-    justify-content: flex-end;
-    position: fixed;
-    right: 2%;
-    cursor: pointer !important;
-    top: 7% !important;
-    background: linear-gradient(267deg,#da7c25 .36%,#b923e1 102.06%);
-    padding: 1rem;
-    z-index:122;
-      /* user-select: none; */
-        /* outline: none; */
-     /* -webkit-tap-highlight-color: transparent; */
-    border-radius: 100%;
-    }
-    
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
 }
