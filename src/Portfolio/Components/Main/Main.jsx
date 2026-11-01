@@ -30,7 +30,7 @@ const Main = ({theme}) => {
         </div>
 
         <FaAlignJustify
-          className={`lighted ${theme === 'light' ? 'darks' : ''}`}
+          className={`hamburger ${theme === 'light' ? 'darks' : ''}`}
           onClick={openMenu}
         />
         <ul onClick={closeMenu} ref={menuRef} className={`ul ${theme === 'light' ? 'darks' : 'lights'}`}>

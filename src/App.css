@@ -65,15 +65,15 @@ input[type="number"] {
   color: #28232d;
 }
 
-.lighted {
+.hamburger {
   display: none;
 }
 
 .theme-toggle {
   position: fixed;
   z-index: 1220;
-  top: 1.25rem;
-  right: 1.25rem;
+  top: 2.3rem;
+  right: 1rem;
   display: grid;
   width: 48px;
   height: 48px;
@@ -114,10 +114,22 @@ input[type="number"] {
   }
 
   .theme-toggle {
-    top: 1rem;
+    top: 2rem;
     right: 1rem;
     width: 44px;
     height: 44px;
+  }
+}
+@media  (max-width:768px){
+  .theme-toggle{
+    top: 2.3rem;
+
+  }
+}
+@media  (max-width:500px){
+  .theme-toggle{
+    top: 6%;
+
   }
 }
 
