@@ -28,7 +28,6 @@ const Main = ({theme}) => {
         <div className="logos">
           <h4>James</h4>
         </div>
-
         <FaAlignJustify
           className={`hamburger ${theme === 'light' ? 'darks' : ''}`}
           onClick={openMenu}
